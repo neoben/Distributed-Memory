@@ -1,0 +1,180 @@
+\hypertarget{classLibrary}{
+\section{Riferimenti per la classe Library}
+\label{classLibrary}\index{Library@{Library}}
+}
+Classe \hyperlink{classLibrary}{Library}.  
+
+
+{\tt \#include $<$client\_\-library.h$>$}
+
+\subsection*{Membri pubblici}
+\begin{CompactItemize}
+\item 
+\hyperlink{classLibrary_82338219d8bf51962ff5f60a0db21b19_82338219d8bf51962ff5f60a0db21b19}{Library} ()
+\begin{CompactList}\small\item\em \hyperlink{classLibrary_82338219d8bf51962ff5f60a0db21b19_82338219d8bf51962ff5f60a0db21b19}{Library()}: costruttore della classe \hyperlink{classLibrary}{Library}. \item\end{CompactList}\item 
+void \hyperlink{classLibrary_ddfd88aedfe05852d065db2644172c52_ddfd88aedfe05852d065db2644172c52}{dm\_\-init} (char $\ast$config\_\-file)
+\begin{CompactList}\small\item\em void \hyperlink{classLibrary_ddfd88aedfe05852d065db2644172c52_ddfd88aedfe05852d065db2644172c52}{dm\_\-init(char$\ast$ config\_\-file)}: funzione pubblica che inizializza la libreria. \item\end{CompactList}\item 
+int \hyperlink{classLibrary_e65e1654765c8a7d764ea9638b735c6f_e65e1654765c8a7d764ea9638b735c6f}{dm\_\-block\_\-map} (int ID, void $\ast$address)
+\begin{CompactList}\small\item\em int \hyperlink{classLibrary_e65e1654765c8a7d764ea9638b735c6f_e65e1654765c8a7d764ea9638b735c6f}{dm\_\-block\_\-map(int ID, void$\ast$ address)}: funzione pubblica che stabilisce l'associazione tra blocco di memoria e indirizzo di memoria locale. \item\end{CompactList}\item 
+void \hyperlink{classLibrary_f9cacba594b2d8ad1f01d73755ef79aa_f9cacba594b2d8ad1f01d73755ef79aa}{dm\_\-block\_\-unmap} (int ID)
+\begin{CompactList}\small\item\em void \hyperlink{classLibrary_f9cacba594b2d8ad1f01d73755ef79aa_f9cacba594b2d8ad1f01d73755ef79aa}{dm\_\-block\_\-unmap(int ID)}: funzione pubblica che segnala al server che il client non è più interessato al blocco ID. \item\end{CompactList}\item 
+int \hyperlink{classLibrary_1f541c7e1158ffb4d6d0f976dba29d71_1f541c7e1158ffb4d6d0f976dba29d71}{dm\_\-block\_\-update} (int ID)
+\begin{CompactList}\small\item\em int \hyperlink{classLibrary_1f541c7e1158ffb4d6d0f976dba29d71_1f541c7e1158ffb4d6d0f976dba29d71}{dm\_\-block\_\-update(int ID)}: funzione pubblica che aggiorna il contenuto della copia locale con il contenuto globale sul server. \item\end{CompactList}\item 
+int \hyperlink{classLibrary_bea6b3730412c3716861261edd3bf670_bea6b3730412c3716861261edd3bf670}{dm\_\-block\_\-write} (int ID)
+\begin{CompactList}\small\item\em int \hyperlink{classLibrary_bea6b3730412c3716861261edd3bf670_bea6b3730412c3716861261edd3bf670}{dm\_\-block\_\-write(int ID)}: funzione pubblica che sincronizza il contenuto locale del blocco con il contenuto globale sul server. \item\end{CompactList}\item 
+int \hyperlink{classLibrary_467dc5e619aeb35ac8d5ac78b48dd450_467dc5e619aeb35ac8d5ac78b48dd450}{dm\_\-block\_\-wait} (int ID)
+\begin{CompactList}\small\item\em int \hyperlink{classLibrary_467dc5e619aeb35ac8d5ac78b48dd450_467dc5e619aeb35ac8d5ac78b48dd450}{dm\_\-block\_\-wait(int ID)}: funzione pubblica che controlla la validità della copia locale del blocco. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Membri privati}
+\begin{CompactItemize}
+\item 
+\hyperlink{structserver__list}{server\_\-list} $\ast$ \hyperlink{classLibrary_8af440e19a373cd2feabfec14509201c_8af440e19a373cd2feabfec14509201c}{find\_\-server} (int id)
+\begin{CompactList}\small\item\em \hyperlink{structserver__list}{server\_\-list} $\ast$ \hyperlink{classLibrary_8af440e19a373cd2feabfec14509201c_8af440e19a373cd2feabfec14509201c}{find\_\-server(int id)}: funzione privata che restituisce il server contenente il blocco identificato da id. \item\end{CompactList}\item 
+\hyperlink{structblock__list}{block\_\-list} $\ast$ \hyperlink{classLibrary_576c1813ccd1f66558aa29a72bc9a48d_576c1813ccd1f66558aa29a72bc9a48d}{find\_\-block} (int id, \hyperlink{structserver__list}{server\_\-list} $\ast$sl)
+\begin{CompactList}\small\item\em \hyperlink{structblock__list}{block\_\-list} $\ast$ \hyperlink{classLibrary_576c1813ccd1f66558aa29a72bc9a48d_576c1813ccd1f66558aa29a72bc9a48d}{find\_\-block(int id, server\_\-list $\ast$sl)}: funzione privata che restituisce il blocco identificato da id. \item\end{CompactList}\item 
+void \hyperlink{classLibrary_cd3582484c72ce7f8758a31e050d64e7_cd3582484c72ce7f8758a31e050d64e7}{create\_\-socket} ()
+\begin{CompactList}\small\item\em void \hyperlink{classLibrary_cd3582484c72ce7f8758a31e050d64e7_cd3582484c72ce7f8758a31e050d64e7}{create\_\-socket()}: funzione privata che crea i socket necessari per mettersi in connessione con i server. \item\end{CompactList}\item 
+int \hyperlink{classLibrary_993a8c688576ea49b82283bd5c38c7b5_993a8c688576ea49b82283bd5c38c7b5}{client\_\-connect} (char $\ast$ip\_\-add, int port, int cl\_\-sk, \hyperlink{structserver__list}{server\_\-list} $\ast$sl)
+\begin{CompactList}\small\item\em int \hyperlink{classLibrary_993a8c688576ea49b82283bd5c38c7b5_993a8c688576ea49b82283bd5c38c7b5}{client\_\-connect(char $\ast$ip\_\-add, int port, int cl\_\-sk, server\_\-list $\ast$sl)}: funzione privata che effettua la connessione del client al server. \item\end{CompactList}\item 
+void \hyperlink{classLibrary_e64f3f91067ea280395d09420d961901_e64f3f91067ea280395d09420d961901}{read\_\-config\_\-file} (char $\ast$config\_\-file)
+\begin{CompactList}\small\item\em void \hyperlink{classLibrary_e64f3f91067ea280395d09420d961901_e64f3f91067ea280395d09420d961901}{read\_\-config\_\-file(char$\ast$ config\_\-file)}: funzione privata che legge il file di configurazione. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Attributi privati}
+\begin{CompactItemize}
+\item 
+\hyperlink{structserver__list}{server\_\-list} $\ast$ \hyperlink{classLibrary_eced31f89cfa5a81b832dddfe84c43f7_eced31f89cfa5a81b832dddfe84c43f7}{head}
+\begin{CompactList}\small\item\em Puntatore alla testa della lista dei server. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+Classe \hyperlink{classLibrary}{Library}. 
+
+La classe implementa le strutture dati e le funzioni di interfaccia richieste dalle specifiche. Utilizza, inoltre, diverse funzioni private per svolgere le operazioni necessarie ai metodi richiesti. 
+
+\subsection{Documentazione dei costruttori e dei distruttori}
+\hypertarget{classLibrary_82338219d8bf51962ff5f60a0db21b19_82338219d8bf51962ff5f60a0db21b19}{
+\index{Library@{Library}!Library@{Library}}
+\index{Library@{Library}!Library@{Library}}
+\subsubsection[{Library}]{\setlength{\rightskip}{0pt plus 5cm}Library::Library ()}}
+\label{classLibrary_82338219d8bf51962ff5f60a0db21b19_82338219d8bf51962ff5f60a0db21b19}
+
+
+\hyperlink{classLibrary_82338219d8bf51962ff5f60a0db21b19_82338219d8bf51962ff5f60a0db21b19}{Library()}: costruttore della classe \hyperlink{classLibrary}{Library}. 
+
+Il costruttore inizializza il puntatore alla testa della lista dei server a NULL. 
+
+\subsection{Documentazione delle funzioni membro}
+\hypertarget{classLibrary_8af440e19a373cd2feabfec14509201c_8af440e19a373cd2feabfec14509201c}{
+\index{Library@{Library}!find\_\-server@{find\_\-server}}
+\index{find\_\-server@{find\_\-server}!Library@{Library}}
+\subsubsection[{find\_\-server}]{\setlength{\rightskip}{0pt plus 5cm}{\bf server\_\-list}$\ast$ Library::find\_\-server (int {\em id})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classLibrary_8af440e19a373cd2feabfec14509201c_8af440e19a373cd2feabfec14509201c}
+
+
+\hyperlink{structserver__list}{server\_\-list} $\ast$ \hyperlink{classLibrary_8af440e19a373cd2feabfec14509201c_8af440e19a373cd2feabfec14509201c}{find\_\-server(int id)}: funzione privata che restituisce il server contenente il blocco identificato da id. 
+
+La funzione scorre la lista di server, contestualmente scorre la lista di blocchi appesi al server e restiuisce il puntatore al server che contiene il blocco che ha id come identificativo. Restituisce NULL se il server non è presente in lista. \hypertarget{classLibrary_576c1813ccd1f66558aa29a72bc9a48d_576c1813ccd1f66558aa29a72bc9a48d}{
+\index{Library@{Library}!find\_\-block@{find\_\-block}}
+\index{find\_\-block@{find\_\-block}!Library@{Library}}
+\subsubsection[{find\_\-block}]{\setlength{\rightskip}{0pt plus 5cm}{\bf block\_\-list}$\ast$ Library::find\_\-block (int {\em id}, \/  {\bf server\_\-list} $\ast$ {\em sl})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classLibrary_576c1813ccd1f66558aa29a72bc9a48d_576c1813ccd1f66558aa29a72bc9a48d}
+
+
+\hyperlink{structblock__list}{block\_\-list} $\ast$ \hyperlink{classLibrary_576c1813ccd1f66558aa29a72bc9a48d_576c1813ccd1f66558aa29a72bc9a48d}{find\_\-block(int id, server\_\-list $\ast$sl)}: funzione privata che restituisce il blocco identificato da id. 
+
+La funzione scorre la lista di blocchi appesi al server puntato da sl e restituisce il puntatore al blocco identificato da id. Restituisce NULL se il blocco non è presente in lista. \hypertarget{classLibrary_cd3582484c72ce7f8758a31e050d64e7_cd3582484c72ce7f8758a31e050d64e7}{
+\index{Library@{Library}!create\_\-socket@{create\_\-socket}}
+\index{create\_\-socket@{create\_\-socket}!Library@{Library}}
+\subsubsection[{create\_\-socket}]{\setlength{\rightskip}{0pt plus 5cm}void Library::create\_\-socket ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classLibrary_cd3582484c72ce7f8758a31e050d64e7_cd3582484c72ce7f8758a31e050d64e7}
+
+
+void \hyperlink{classLibrary_cd3582484c72ce7f8758a31e050d64e7_cd3582484c72ce7f8758a31e050d64e7}{create\_\-socket()}: funzione privata che crea i socket necessari per mettersi in connessione con i server. 
+
+La funzione scorre la lista di server e crea un socket per ogni elemento presente in lista. \hypertarget{classLibrary_993a8c688576ea49b82283bd5c38c7b5_993a8c688576ea49b82283bd5c38c7b5}{
+\index{Library@{Library}!client\_\-connect@{client\_\-connect}}
+\index{client\_\-connect@{client\_\-connect}!Library@{Library}}
+\subsubsection[{client\_\-connect}]{\setlength{\rightskip}{0pt plus 5cm}int Library::client\_\-connect (char $\ast$ {\em ip\_\-add}, \/  int {\em port}, \/  int {\em cl\_\-sk}, \/  {\bf server\_\-list} $\ast$ {\em sl})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classLibrary_993a8c688576ea49b82283bd5c38c7b5_993a8c688576ea49b82283bd5c38c7b5}
+
+
+int \hyperlink{classLibrary_993a8c688576ea49b82283bd5c38c7b5_993a8c688576ea49b82283bd5c38c7b5}{client\_\-connect(char $\ast$ip\_\-add, int port, int cl\_\-sk, server\_\-list $\ast$sl)}: funzione privata che effettua la connessione del client al server. 
+
+La funzione inizializza le strutture dati necessarie , effettua la connessione verso il server avente indirizo IP ip\_\-add e porta port, setta la variabile booleana connected a 1. La funzione ritorna 1 in caso di successo e -1 in caso di errore. \hypertarget{classLibrary_e64f3f91067ea280395d09420d961901_e64f3f91067ea280395d09420d961901}{
+\index{Library@{Library}!read\_\-config\_\-file@{read\_\-config\_\-file}}
+\index{read\_\-config\_\-file@{read\_\-config\_\-file}!Library@{Library}}
+\subsubsection[{read\_\-config\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}void Library::read\_\-config\_\-file (char $\ast$ {\em config\_\-file})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classLibrary_e64f3f91067ea280395d09420d961901_e64f3f91067ea280395d09420d961901}
+
+
+void \hyperlink{classLibrary_e64f3f91067ea280395d09420d961901_e64f3f91067ea280395d09420d961901}{read\_\-config\_\-file(char$\ast$ config\_\-file)}: funzione privata che legge il file di configurazione. 
+
+La funzione legge il contenuto del file di configurazione, crea la lista di server in base al numero di righe presenti nel file effettuando l'inserimento di ogni nuovo elemento in testa, per ogni elemento della lista di server crea una lista di blocchi associati al server in base ai blocchi presenti nel file di configurazione effettuando l'inserimento di ogni nuovo elemento in testa, inizializza le variabili della struttura relativa al blocco per ogni elemento della lista di blocchi. \hypertarget{classLibrary_ddfd88aedfe05852d065db2644172c52_ddfd88aedfe05852d065db2644172c52}{
+\index{Library@{Library}!dm\_\-init@{dm\_\-init}}
+\index{dm\_\-init@{dm\_\-init}!Library@{Library}}
+\subsubsection[{dm\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void Library::dm\_\-init (char $\ast$ {\em config\_\-file})}}
+\label{classLibrary_ddfd88aedfe05852d065db2644172c52_ddfd88aedfe05852d065db2644172c52}
+
+
+void \hyperlink{classLibrary_ddfd88aedfe05852d065db2644172c52_ddfd88aedfe05852d065db2644172c52}{dm\_\-init(char$\ast$ config\_\-file)}: funzione pubblica che inizializza la libreria. 
+
+La funzione carica dal file config\_\-file l'associazione tra ID dei blocchi e server richiamando la read\_\-config\_\-file, apre una serie di socket per permettere al client di mettersi in connessione con i server richiamando la create\_\-socket. \hypertarget{classLibrary_e65e1654765c8a7d764ea9638b735c6f_e65e1654765c8a7d764ea9638b735c6f}{
+\index{Library@{Library}!dm\_\-block\_\-map@{dm\_\-block\_\-map}}
+\index{dm\_\-block\_\-map@{dm\_\-block\_\-map}!Library@{Library}}
+\subsubsection[{dm\_\-block\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}int Library::dm\_\-block\_\-map (int {\em ID}, \/  void $\ast$ {\em address})}}
+\label{classLibrary_e65e1654765c8a7d764ea9638b735c6f_e65e1654765c8a7d764ea9638b735c6f}
+
+
+int \hyperlink{classLibrary_e65e1654765c8a7d764ea9638b735c6f_e65e1654765c8a7d764ea9638b735c6f}{dm\_\-block\_\-map(int ID, void$\ast$ address)}: funzione pubblica che stabilisce l'associazione tra blocco di memoria e indirizzo di memoria locale. 
+
+La funzione trova il server che contiene il blocco ID richiamando la find\_\-server, trova il blocco interessato richiamando la find\_\-block, effettua un controllo sulla variabile booleana connected e se il client non risulta connesso al server, effettua la connessione richiamando la client\_\-connect. Successivamente invia il comando relativo all'operazione dal svolgere al server, invia l'ID del blocco interessato al server, richiede la copia del blocco a partire dall'indirizzo address, segnala che il blocco è associato ad un indirizzo di memoria locale settando la variabile booleana associated a 1. La funzione restituisce 1 in caso di successo e -1 in caso di errore (non è possibile effettuare la connessione, il server non risponde, il blocco è gia associato ad un altro indirizzo di memoria locale). \hypertarget{classLibrary_f9cacba594b2d8ad1f01d73755ef79aa_f9cacba594b2d8ad1f01d73755ef79aa}{
+\index{Library@{Library}!dm\_\-block\_\-unmap@{dm\_\-block\_\-unmap}}
+\index{dm\_\-block\_\-unmap@{dm\_\-block\_\-unmap}!Library@{Library}}
+\subsubsection[{dm\_\-block\_\-unmap}]{\setlength{\rightskip}{0pt plus 5cm}void Library::dm\_\-block\_\-unmap (int {\em ID})}}
+\label{classLibrary_f9cacba594b2d8ad1f01d73755ef79aa_f9cacba594b2d8ad1f01d73755ef79aa}
+
+
+void \hyperlink{classLibrary_f9cacba594b2d8ad1f01d73755ef79aa_f9cacba594b2d8ad1f01d73755ef79aa}{dm\_\-block\_\-unmap(int ID)}: funzione pubblica che segnala al server che il client non è più interessato al blocco ID. 
+
+La funzione trova il server che contiene il blocco ID richiamando la find\_\-server, trova il blocco interessato richiamando la find\_\-block, invia il comando relativo all'operazione dal svolgere al server, invia l'ID del blocco interessato al server, segnala che il blocco non è più associato ad un indirizzo di memoria locale resettando la variabile boolena associated a 0. La funzione fallisce se il blocco non era stato preventivamente associato ad un indirizzo di memoria locale. \hypertarget{classLibrary_1f541c7e1158ffb4d6d0f976dba29d71_1f541c7e1158ffb4d6d0f976dba29d71}{
+\index{Library@{Library}!dm\_\-block\_\-update@{dm\_\-block\_\-update}}
+\index{dm\_\-block\_\-update@{dm\_\-block\_\-update}!Library@{Library}}
+\subsubsection[{dm\_\-block\_\-update}]{\setlength{\rightskip}{0pt plus 5cm}int Library::dm\_\-block\_\-update (int {\em ID})}}
+\label{classLibrary_1f541c7e1158ffb4d6d0f976dba29d71_1f541c7e1158ffb4d6d0f976dba29d71}
+
+
+int \hyperlink{classLibrary_1f541c7e1158ffb4d6d0f976dba29d71_1f541c7e1158ffb4d6d0f976dba29d71}{dm\_\-block\_\-update(int ID)}: funzione pubblica che aggiorna il contenuto della copia locale con il contenuto globale sul server. 
+
+La funzione trova il server che contiene il blocco ID richiamando la find\_\-server, trova il blocco interessato richiamando la find\_\-block, invia il comando relativo all'operazione dal svolgere al server, invia l'ID del blocco interessato al server, riceve il controllo sulla validità della copia locale del blocco dal server e se la copia locale risulta ancora valida non effettua alcuna copia, altrimenti, aggiorna il contenuto della copia locale con quello della copia globale. La funzione restituisce 1 in caso di successo e -1 in caso di errore (il server non risponde, il blocco non era stato associato ad alcun indirizzo di memoria locale). \hypertarget{classLibrary_bea6b3730412c3716861261edd3bf670_bea6b3730412c3716861261edd3bf670}{
+\index{Library@{Library}!dm\_\-block\_\-write@{dm\_\-block\_\-write}}
+\index{dm\_\-block\_\-write@{dm\_\-block\_\-write}!Library@{Library}}
+\subsubsection[{dm\_\-block\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}int Library::dm\_\-block\_\-write (int {\em ID})}}
+\label{classLibrary_bea6b3730412c3716861261edd3bf670_bea6b3730412c3716861261edd3bf670}
+
+
+int \hyperlink{classLibrary_bea6b3730412c3716861261edd3bf670_bea6b3730412c3716861261edd3bf670}{dm\_\-block\_\-write(int ID)}: funzione pubblica che sincronizza il contenuto locale del blocco con il contenuto globale sul server. 
+
+La funzione trova il server che contiene il blocco ID richiamando la find\_\-server, trova il blocco interessato richiamando la find\_\-block, invia il comando relativo all'operazione dal svolgere al server, invia l'ID del blocco interessato al server, riceve il controllo sulla validità della copia locale del blocco dal server e se la copia locale risulta valida sincronizza il contenuto locale del blocco con il contenuto globale sul server. La funzione ritorna con errore (con codici di errori diversi) nel caso in cui il blocco non era stato associato ad alcun indirizzo di memoria locale, la copia locale del blocco risulta invalida, il server non risponde. La funzione restituisce 1 in caso di successo. \hypertarget{classLibrary_467dc5e619aeb35ac8d5ac78b48dd450_467dc5e619aeb35ac8d5ac78b48dd450}{
+\index{Library@{Library}!dm\_\-block\_\-wait@{dm\_\-block\_\-wait}}
+\index{dm\_\-block\_\-wait@{dm\_\-block\_\-wait}!Library@{Library}}
+\subsubsection[{dm\_\-block\_\-wait}]{\setlength{\rightskip}{0pt plus 5cm}int Library::dm\_\-block\_\-wait (int {\em ID})}}
+\label{classLibrary_467dc5e619aeb35ac8d5ac78b48dd450_467dc5e619aeb35ac8d5ac78b48dd450}
+
+
+int \hyperlink{classLibrary_467dc5e619aeb35ac8d5ac78b48dd450_467dc5e619aeb35ac8d5ac78b48dd450}{dm\_\-block\_\-wait(int ID)}: funzione pubblica che controlla la validità della copia locale del blocco. 
+
+La funzione trova il server che contiene il blocco ID richiamando la find\_\-server, trova il blocco interessato richiamando la find\_\-block, invia il comando relativo all'operazione dal svolgere al server, invia l'ID del blocco interessato al server, riceve il controllo sulla validità della copia locale del blocco dal server e se la copia locale risulta invalida ritorna immediatamente, altrimenti, resta in attesa di ricevere dal server il segnale che notifica che la copia locale è diventata invalida. La funzione restituisce 1 in caso di successo e -1 in caso di errore (il server non risponde, il blocco non era stato associato ad alcun indirizzo di memoria locale). 
+
+\subsection{Documentazione dei campi}
+\hypertarget{classLibrary_eced31f89cfa5a81b832dddfe84c43f7_eced31f89cfa5a81b832dddfe84c43f7}{
+\index{Library@{Library}!head@{head}}
+\index{head@{head}!Library@{Library}}
+\subsubsection[{head}]{\setlength{\rightskip}{0pt plus 5cm}{\bf server\_\-list}$\ast$ {\bf Library::head}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classLibrary_eced31f89cfa5a81b832dddfe84c43f7_eced31f89cfa5a81b832dddfe84c43f7}
+
+
+Puntatore alla testa della lista dei server. 
+
+
+
+La documentazione per questa classe è stata generata a partire dal seguente file:\begin{CompactItemize}
+\item 
+\hyperlink{client__library_8h}{client\_\-library.h}\end{CompactItemize}

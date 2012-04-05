@@ -1,0 +1,69 @@
+\hypertarget{structclient__list}{
+\section{Riferimenti per la struct client\_\-list}
+\label{structclient__list}\index{client\_\-list@{client\_\-list}}
+}
+Struttura dati della lista di client associati al blocco: \hyperlink{structclient__list}{client\_\-list}.  
+
+
+{\tt \#include $<$server.h$>$}
+
+\subsection*{Campi}
+\begin{CompactItemize}
+\item 
+int \hyperlink{structclient__list_3dd69ca49266d1f26a0324be11a1ce89_3dd69ca49266d1f26a0324be11a1ce89}{cl\_\-ID}
+\begin{CompactList}\small\item\em Identificativo del client. \item\end{CompactList}\item 
+bool \hyperlink{structclient__list_0472ce71de752ddef8a4cd7410eee065_0472ce71de752ddef8a4cd7410eee065}{valid}
+\begin{CompactList}\small\item\em Variabile per la gestione della validità del blocco associato al client. \item\end{CompactList}\item 
+bool \hyperlink{structclient__list_7c62f5d8c3576121a64be202bc67b0a2_7c62f5d8c3576121a64be202bc67b0a2}{lock}
+\begin{CompactList}\small\item\em Variabile per la gestione del client in attesa che la copia locale diventi valida. \item\end{CompactList}\item 
+\hyperlink{structclient__list}{client\_\-list} $\ast$ \hyperlink{structclient__list_b5efb920edea57018e99194c5ae42cff_b5efb920edea57018e99194c5ae42cff}{succ}
+\begin{CompactList}\small\item\em Puntatore al client successivo connesso al server. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+Struttura dati della lista di client associati al blocco: \hyperlink{structclient__list}{client\_\-list}. 
+
+La struttura dati contiene l'identificativo del client, la variabile booleana per la gestione della validità del blocco associato al client, la variabile booleana per la gestione del client in attesa che la copia locale diventi valida, il puntatore al client successivo connesso al server. 
+
+\subsection{Documentazione dei campi}
+\hypertarget{structclient__list_3dd69ca49266d1f26a0324be11a1ce89_3dd69ca49266d1f26a0324be11a1ce89}{
+\index{client\_\-list@{client\_\-list}!cl\_\-ID@{cl\_\-ID}}
+\index{cl\_\-ID@{cl\_\-ID}!client_list@{client\_\-list}}
+\subsubsection[{cl\_\-ID}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf client\_\-list::cl\_\-ID}}}
+\label{structclient__list_3dd69ca49266d1f26a0324be11a1ce89_3dd69ca49266d1f26a0324be11a1ce89}
+
+
+Identificativo del client. 
+
+\hypertarget{structclient__list_0472ce71de752ddef8a4cd7410eee065_0472ce71de752ddef8a4cd7410eee065}{
+\index{client\_\-list@{client\_\-list}!valid@{valid}}
+\index{valid@{valid}!client_list@{client\_\-list}}
+\subsubsection[{valid}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf client\_\-list::valid}}}
+\label{structclient__list_0472ce71de752ddef8a4cd7410eee065_0472ce71de752ddef8a4cd7410eee065}
+
+
+Variabile per la gestione della validità del blocco associato al client. 
+
+\hypertarget{structclient__list_7c62f5d8c3576121a64be202bc67b0a2_7c62f5d8c3576121a64be202bc67b0a2}{
+\index{client\_\-list@{client\_\-list}!lock@{lock}}
+\index{lock@{lock}!client_list@{client\_\-list}}
+\subsubsection[{lock}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf client\_\-list::lock}}}
+\label{structclient__list_7c62f5d8c3576121a64be202bc67b0a2_7c62f5d8c3576121a64be202bc67b0a2}
+
+
+Variabile per la gestione del client in attesa che la copia locale diventi valida. 
+
+\hypertarget{structclient__list_b5efb920edea57018e99194c5ae42cff_b5efb920edea57018e99194c5ae42cff}{
+\index{client\_\-list@{client\_\-list}!succ@{succ}}
+\index{succ@{succ}!client_list@{client\_\-list}}
+\subsubsection[{succ}]{\setlength{\rightskip}{0pt plus 5cm}{\bf client\_\-list}$\ast$ {\bf client\_\-list::succ}}}
+\label{structclient__list_b5efb920edea57018e99194c5ae42cff_b5efb920edea57018e99194c5ae42cff}
+
+
+Puntatore al client successivo connesso al server. 
+
+
+
+La documentazione per questa struct è stata generata a partire dal seguente file:\begin{CompactItemize}
+\item 
+\hyperlink{server_8h}{server.h}\end{CompactItemize}

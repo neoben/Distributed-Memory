@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>DistributedMemory:  File sorgente client_library.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generato da Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Pagina&nbsp;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&nbsp;dati</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Elenco&nbsp;dei&nbsp;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&nbsp;globali</span></a></li>
+    </ul>
+  </div>
+<h1>client_library.h</h1><a href="client__library_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#include &lt;iostream&gt;</span>
+<a name="l00002"></a>00002 <span class="preprocessor">#include &lt;fstream&gt;</span>
+<a name="l00003"></a>00003 <span class="preprocessor">#include &lt;cstring&gt;</span> 
+<a name="l00004"></a>00004 <span class="preprocessor">#include &lt;stdlib.h&gt;</span> 
+<a name="l00005"></a>00005 <span class="preprocessor">#include &lt;sys/socket.h&gt;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &lt;netinet/in.h&gt;</span> 
+<a name="l00007"></a>00007 <span class="preprocessor">#include &lt;arpa/inet.h&gt;</span> 
+<a name="l00008"></a>00008 <span class="preprocessor">#include &lt;strings.h&gt;</span> 
+<a name="l00009"></a>00009 <span class="preprocessor">#include &lt;pthread.h&gt;</span>
+<a name="l00010"></a>00010 
+<a name="l00012"></a><a class="code" href="client__library_8h_eefbbafa97642defe3ee6c3080b7d66f.html#eefbbafa97642defe3ee6c3080b7d66f">00012</a> <span class="preprocessor">#define BACKLOG 5 </span>
+<a name="l00013"></a>00013 <span class="preprocessor"></span>
+<a name="l00015"></a><a class="code" href="client__library_8h_09a3b394b8602092d58347b791158062.html#09a3b394b8602092d58347b791158062">00015</a> <span class="preprocessor">#define MAX_LINE_LEN 1024 </span>
+<a name="l00016"></a>00016 <span class="preprocessor"></span>
+<a name="l00018"></a><a class="code" href="client__library_8h_9d268e8e328e69ed44c8f1fc6707ae60.html#9d268e8e328e69ed44c8f1fc6707ae60">00018</a> <span class="preprocessor">#define DIMBLOCK 128*sizeof(char) </span>
+<a name="l00019"></a>00019 <span class="preprocessor"></span>
+<a name="l00020"></a>00020 <span class="keyword">using namespace </span>std;
+<a name="l00021"></a>00021 
+<a name="l00029"></a><a class="code" href="structblock__list.html">00029</a> <span class="keyword">struct </span><a class="code" href="structblock__list.html" title="Struttura dati del blocco di memoria: block_list.">block_list</a> {
+<a name="l00031"></a><a class="code" href="structblock__list_ffcd96e737413a77caf6eb83ca18d5c1.html#ffcd96e737413a77caf6eb83ca18d5c1">00031</a>         <span class="keywordtype">int</span> <a class="code" href="structblock__list_ffcd96e737413a77caf6eb83ca18d5c1.html#ffcd96e737413a77caf6eb83ca18d5c1" title="ID del blocco di memoria.">ID</a>;
+<a name="l00033"></a><a class="code" href="structblock__list_00f54f470b2a579aab495ee7f414ed97.html#00f54f470b2a579aab495ee7f414ed97">00033</a>         <span class="keywordtype">void</span> *<a class="code" href="structblock__list_00f54f470b2a579aab495ee7f414ed97.html#00f54f470b2a579aab495ee7f414ed97" title="Puntatore alla prima cella di memoria in cui è memorizzato il blocco.">pointer</a>; 
+<a name="l00035"></a><a class="code" href="structblock__list_1cd72fdc1de5c3d7e8b8f8da29a3dbfd.html#1cd72fdc1de5c3d7e8b8f8da29a3dbfd">00035</a>         <span class="keywordtype">bool</span> <a class="code" href="structblock__list_1cd72fdc1de5c3d7e8b8f8da29a3dbfd.html#1cd72fdc1de5c3d7e8b8f8da29a3dbfd" title="Variabile per gestire l&amp;#39;associazione tra blocco di memoria e indirizzo di memoria...">associated</a>;
+<a name="l00037"></a><a class="code" href="structblock__list_55fb1bd769461ad9b55a7ad08d959665.html#55fb1bd769461ad9b55a7ad08d959665">00037</a>         <a class="code" href="structblock__list.html" title="Struttura dati del blocco di memoria: block_list.">block_list</a> *<a class="code" href="structblock__list_55fb1bd769461ad9b55a7ad08d959665.html#55fb1bd769461ad9b55a7ad08d959665" title="Puntatore al blocco successivo.">succ</a>;
+<a name="l00038"></a>00038 };
+<a name="l00039"></a>00039 
+<a name="l00049"></a><a class="code" href="structserver__list.html">00049</a> <span class="keyword">struct </span><a class="code" href="structserver__list.html" title="Struttura dati della lista di server: server_list.">server_list</a> {
+<a name="l00051"></a><a class="code" href="structserver__list_ecade329fa4773018ee94fa73ee43d8e.html#ecade329fa4773018ee94fa73ee43d8e">00051</a>         <span class="keywordtype">char</span> <a class="code" href="structserver__list_ecade329fa4773018ee94fa73ee43d8e.html#ecade329fa4773018ee94fa73ee43d8e" title="Indirizzo IP del server a cui si connette il client.">ip_add</a>[15]; 
+<a name="l00053"></a><a class="code" href="structserver__list_bb30850b4352cd990f913320d7e243b4.html#bb30850b4352cd990f913320d7e243b4">00053</a>         <span class="keywordtype">int</span> <a class="code" href="structserver__list_bb30850b4352cd990f913320d7e243b4.html#bb30850b4352cd990f913320d7e243b4" title="Porta associata all&amp;#39;indirizzo IP.">port</a>; 
+<a name="l00055"></a><a class="code" href="structserver__list_79719d4ab0eee7769ccba74394c8c09b.html#79719d4ab0eee7769ccba74394c8c09b">00055</a>         <span class="keywordtype">int</span> <a class="code" href="structserver__list_79719d4ab0eee7769ccba74394c8c09b.html#79719d4ab0eee7769ccba74394c8c09b" title="Descrittore del socket lato client.">cl_sk</a>;
+<a name="l00057"></a><a class="code" href="structserver__list_4c9b2c2aaceed434fdb463dabfe487f4.html#4c9b2c2aaceed434fdb463dabfe487f4">00057</a>         <span class="keywordtype">bool</span> <a class="code" href="structserver__list_4c9b2c2aaceed434fdb463dabfe487f4.html#4c9b2c2aaceed434fdb463dabfe487f4" title="Variabile per la gestione della connessione client-server.">connected</a>; 
+<a name="l00059"></a><a class="code" href="structserver__list_7cef5477a059bde2cd16d5da85bdf62b.html#7cef5477a059bde2cd16d5da85bdf62b">00059</a>         <a class="code" href="structblock__list.html" title="Struttura dati del blocco di memoria: block_list.">block_list</a> *<a class="code" href="structserver__list_7cef5477a059bde2cd16d5da85bdf62b.html#7cef5477a059bde2cd16d5da85bdf62b" title="Puntatore alla testa della lista di blocchi associati ad ogni server.">block_head</a>; 
+<a name="l00061"></a><a class="code" href="structserver__list_64bb0479e5e9c0e84bef62534b40495b.html#64bb0479e5e9c0e84bef62534b40495b">00061</a>         <a class="code" href="structserver__list.html" title="Struttura dati della lista di server: server_list.">server_list</a> *<a class="code" href="structserver__list_64bb0479e5e9c0e84bef62534b40495b.html#64bb0479e5e9c0e84bef62534b40495b" title="Puntatore all&amp;#39;elemento successivo della lista di server a cui il client è connesso...">succ</a>;
+<a name="l00062"></a>00062 };
+<a name="l00063"></a>00063 
+<a name="l00069"></a><a class="code" href="classLibrary.html">00069</a> <span class="keyword">class </span><a class="code" href="classLibrary.html" title="Classe Library.">Library</a>{
+<a name="l00071"></a><a class="code" href="classLibrary_eced31f89cfa5a81b832dddfe84c43f7.html#eced31f89cfa5a81b832dddfe84c43f7">00071</a>         <a class="code" href="structserver__list.html" title="Struttura dati della lista di server: server_list.">server_list</a> *<a class="code" href="classLibrary_eced31f89cfa5a81b832dddfe84c43f7.html#eced31f89cfa5a81b832dddfe84c43f7" title="Puntatore alla testa della lista dei server.">head</a>;
+<a name="l00072"></a>00072                 
+<a name="l00083"></a>00083         <a class="code" href="structserver__list.html" title="Struttura dati della lista di server: server_list.">server_list</a> * <a class="code" href="classLibrary_8af440e19a373cd2feabfec14509201c.html#8af440e19a373cd2feabfec14509201c" title="server_list * find_server(int id): funzione privata che restituisce il server contenente...">find_server</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);
+<a name="l00084"></a>00084 
+<a name="l00094"></a>00094         <a class="code" href="structblock__list.html" title="Struttura dati del blocco di memoria: block_list.">block_list</a> * <a class="code" href="classLibrary_576c1813ccd1f66558aa29a72bc9a48d.html#576c1813ccd1f66558aa29a72bc9a48d" title="block_list * find_block(int id, server_list *sl): funzione privata che restituisce...">find_block</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <a class="code" href="structserver__list.html" title="Struttura dati della lista di server: server_list.">server_list</a> *sl);
+<a name="l00095"></a>00095 
+<a name="l00104"></a>00104         <span class="keywordtype">void</span> <a class="code" href="classLibrary_cd3582484c72ce7f8758a31e050d64e7.html#cd3582484c72ce7f8758a31e050d64e7" title="void create_socket(): funzione privata che crea i socket necessari per mettersi in...">create_socket</a>();   
+<a name="l00105"></a>00105 
+<a name="l00116"></a>00116         <span class="keywordtype">int</span> <a class="code" href="classLibrary_993a8c688576ea49b82283bd5c38c7b5.html#993a8c688576ea49b82283bd5c38c7b5" title="int client_connect(char *ip_add, int port, int cl_sk, server_list *sl): funzione...">client_connect</a>(<span class="keywordtype">char</span> *ip_add, <span class="keywordtype">int</span> port, <span class="keywordtype">int</span> cl_sk, <a class="code" href="structserver__list.html" title="Struttura dati della lista di server: server_list.">server_list</a> *sl); 
+<a name="l00117"></a>00117 
+<a name="l00130"></a>00130         <span class="keywordtype">void</span> <a class="code" href="classLibrary_e64f3f91067ea280395d09420d961901.html#e64f3f91067ea280395d09420d961901" title="void read_config_file(char* config_file): funzione privata che legge il file di configurazione...">read_config_file</a>(<span class="keywordtype">char</span> *config_file);
+<a name="l00131"></a>00131 <span class="keyword">public</span>:
+<a name="l00139"></a>00139         <a class="code" href="classLibrary_82338219d8bf51962ff5f60a0db21b19.html#82338219d8bf51962ff5f60a0db21b19" title="Library(): costruttore della classe Library.">Library</a>();
+<a name="l00140"></a>00140                 
+<a name="l00151"></a>00151         <span class="keywordtype">void</span> <a class="code" href="classLibrary_ddfd88aedfe05852d065db2644172c52.html#ddfd88aedfe05852d065db2644172c52" title="void dm_init(char* config_file): funzione pubblica che inizializza la libreria.">dm_init</a>(<span class="keywordtype">char</span> *config_file);
+<a name="l00152"></a>00152 
+<a name="l00173"></a>00173         <span class="keywordtype">int</span> <a class="code" href="classLibrary_e65e1654765c8a7d764ea9638b735c6f.html#e65e1654765c8a7d764ea9638b735c6f" title="int dm_block_map(int ID, void* address): funzione pubblica che stabilisce l&amp;#39;associazione...">dm_block_map</a>(<span class="keywordtype">int</span> ID, <span class="keywordtype">void</span> *address);
+<a name="l00174"></a>00174 
+<a name="l00189"></a>00189         <span class="keywordtype">void</span> <a class="code" href="classLibrary_f9cacba594b2d8ad1f01d73755ef79aa.html#f9cacba594b2d8ad1f01d73755ef79aa" title="void dm_block_unmap(int ID): funzione pubblica che segnala al server che il client...">dm_block_unmap</a>(<span class="keywordtype">int</span> ID);
+<a name="l00190"></a>00190 
+<a name="l00208"></a>00208         <span class="keywordtype">int</span> <a class="code" href="classLibrary_1f541c7e1158ffb4d6d0f976dba29d71.html#1f541c7e1158ffb4d6d0f976dba29d71" title="int dm_block_update(int ID): funzione pubblica che aggiorna il contenuto della copia...">dm_block_update</a>(<span class="keywordtype">int</span> ID);
+<a name="l00209"></a>00209 
+<a name="l00228"></a>00228         <span class="keywordtype">int</span> <a class="code" href="classLibrary_bea6b3730412c3716861261edd3bf670.html#bea6b3730412c3716861261edd3bf670" title="int dm_block_write(int ID): funzione pubblica che sincronizza il contenuto locale...">dm_block_write</a>(<span class="keywordtype">int</span> ID);
+<a name="l00229"></a>00229 
+<a name="l00247"></a>00247         <span class="keywordtype">int</span> <a class="code" href="classLibrary_467dc5e619aeb35ac8d5ac78b48dd450.html#467dc5e619aeb35ac8d5ac78b48dd450" title="int dm_block_wait(int ID): funzione pubblica che controlla la validità della copia...">dm_block_wait</a>(<span class="keywordtype">int</span> ID);
+<a name="l00248"></a>00248 
+<a name="l00249"></a>00249 };
+<a name="l00250"></a>00250 
+<a name="l00251"></a>00251 
+<a name="l00252"></a>00252 
+</pre></div></div>
+<hr size="1"><address style="text-align: right;"><small>Generato il Fri Feb 4 17:36:39 2011 per DistributedMemory da&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

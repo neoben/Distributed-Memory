@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>DistributedMemory: Riferimenti per la struct server_list</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generato da Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Pagina&nbsp;Principale</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Strutture&nbsp;dati</span></a></li>
+      <li><a href="files.html"><span>File</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="annotated.html"><span>Strutture&nbsp;dati</span></a></li>
+      <li><a href="functions.html"><span>Campi&nbsp;dei&nbsp;dati</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Riferimenti per la struct server_list</h1><!-- doxytag: class="server_list" -->Struttura dati della lista di server: <a class="el" href="structserver__list.html" title="Struttura dati della lista di server: server_list.">server_list</a>.  
+<a href="#_details">Continua...</a>
+<p>
+<code>#include &lt;<a class="el" href="client__library_8h-source.html">client_library.h</a>&gt;</code>
+<p>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Campi</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structserver__list_ecade329fa4773018ee94fa73ee43d8e.html#ecade329fa4773018ee94fa73ee43d8e">ip_add</a> [15]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indirizzo IP del server a cui si connette il client.  <a href="#ecade329fa4773018ee94fa73ee43d8e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structserver__list_bb30850b4352cd990f913320d7e243b4.html#bb30850b4352cd990f913320d7e243b4">port</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Porta associata all'indirizzo IP.  <a href="#bb30850b4352cd990f913320d7e243b4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structserver__list_79719d4ab0eee7769ccba74394c8c09b.html#79719d4ab0eee7769ccba74394c8c09b">cl_sk</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Descrittore del socket lato client.  <a href="#79719d4ab0eee7769ccba74394c8c09b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structserver__list_4c9b2c2aaceed434fdb463dabfe487f4.html#4c9b2c2aaceed434fdb463dabfe487f4">connected</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Variabile per la gestione della connessione client-server.  <a href="#4c9b2c2aaceed434fdb463dabfe487f4"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="structblock__list.html">block_list</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structserver__list_7cef5477a059bde2cd16d5da85bdf62b.html#7cef5477a059bde2cd16d5da85bdf62b">block_head</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Puntatore alla testa della lista di blocchi associati ad ogni server.  <a href="#7cef5477a059bde2cd16d5da85bdf62b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="structserver__list.html">server_list</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structserver__list_64bb0479e5e9c0e84bef62534b40495b.html#64bb0479e5e9c0e84bef62534b40495b">succ</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Puntatore all'elemento successivo della lista di server a cui il client è connesso.  <a href="#64bb0479e5e9c0e84bef62534b40495b"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Descrizione dettagliata</h2>
+Struttura dati della lista di server: <a class="el" href="structserver__list.html" title="Struttura dati della lista di server: server_list.">server_list</a>. 
+<p>
+La struttura dati contiene l'indirizzo IP del server a cui si connette il client, la porta associata all'indirizzo IP, il descrittore del socket lato client, la variabile booleana per la gestione della connessione client-server, il puntatore alla testa della lista di blocchi associati ad ogni server, il puntatore all'elemento successivo della lista dei server a cui il client si è connesso. <hr>La documentazione per questa struct è stata generata a partire dal seguente file:<ul>
+<li><a class="el" href="client__library_8h-source.html">client_library.h</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generato il Fri Feb 4 17:36:40 2011 per DistributedMemory da&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

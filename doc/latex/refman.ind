@@ -1,0 +1,221 @@
+\begin{theindex}
+
+  \item {add\_\discretionary {-}{}{}block}
+    \subitem {Server}, \hyperpage{14}
+  \item {add\_\discretionary {-}{}{}client}
+    \subitem {Server}, \hyperpage{15}
+  \item {associated}
+    \subitem {block\_\discretionary {-}{}{}list}, \hyperpage{7}
+
+  \indexspace
+
+  \item {b\_\discretionary {-}{}{}acc}
+    \subitem {block}, \hyperpage{6}
+  \item {BACKLOG}
+    \subitem {client\_\discretionary {-}{}{}library.h}, \hyperpage{22}
+    \subitem {server.h}, \hyperpage{24}
+  \item {block}, \hyperpage{5}
+    \subitem {b\_\discretionary {-}{}{}acc}, \hyperpage{6}
+    \subitem {cl\_\discretionary {-}{}{}ptr}, \hyperpage{6}
+    \subitem {ID}, \hyperpage{6}
+    \subitem {pointer}, \hyperpage{6}
+    \subitem {succ}, \hyperpage{6}
+  \item {block\_\discretionary {-}{}{}head}
+    \subitem {server\_\discretionary {-}{}{}list}, \hyperpage{19}
+  \item {block\_\discretionary {-}{}{}list}, \hyperpage{7}
+    \subitem {associated}, \hyperpage{7}
+    \subitem {ID}, \hyperpage{7}
+    \subitem {pointer}, \hyperpage{7}
+    \subitem {succ}, \hyperpage{7}
+  \item {block\_\discretionary {-}{}{}map}
+    \subitem {Server}, \hyperpage{15}
+  \item {block\_\discretionary {-}{}{}unmap}
+    \subitem {Server}, \hyperpage{16}
+  \item {block\_\discretionary {-}{}{}update}
+    \subitem {Server}, \hyperpage{16}
+  \item {block\_\discretionary {-}{}{}wait}
+    \subitem {Server}, \hyperpage{16}
+  \item {block\_\discretionary {-}{}{}write}
+    \subitem {Server}, \hyperpage{16}
+
+  \indexspace
+
+  \item {change\_\discretionary {-}{}{}valid}
+    \subitem {Server}, \hyperpage{15}
+  \item {cl\_\discretionary {-}{}{}ID}
+    \subitem {client\_\discretionary {-}{}{}list}, \hyperpage{8}
+  \item {cl\_\discretionary {-}{}{}ptr}
+    \subitem {block}, \hyperpage{6}
+  \item {cl\_\discretionary {-}{}{}sk}
+    \subitem {server\_\discretionary {-}{}{}list}, \hyperpage{18}
+  \item {client\_\discretionary {-}{}{}connect}
+    \subitem {Library}, \hyperpage{10}
+  \item {client\_\discretionary {-}{}{}library.h}, \hyperpage{21}
+    \subitem {BACKLOG}, \hyperpage{22}
+    \subitem {DIMBLOCK}, \hyperpage{22}
+    \subitem {MAX\_\discretionary {-}{}{}LINE\_\discretionary {-}{}{}LEN}, 
+		\hyperpage{22}
+  \item {client\_\discretionary {-}{}{}list}, \hyperpage{8}
+    \subitem {cl\_\discretionary {-}{}{}ID}, \hyperpage{8}
+    \subitem {lock}, \hyperpage{8}
+    \subitem {succ}, \hyperpage{8}
+    \subitem {valid}, \hyperpage{8}
+  \item {client\_\discretionary {-}{}{}unblock}
+    \subitem {Server}, \hyperpage{15}
+  \item {config\_\discretionary {-}{}{}file\_\discretionary {-}{}{}path}
+    \subitem {server.h}, \hyperpage{24}
+  \item {connected}
+    \subitem {server\_\discretionary {-}{}{}list}, \hyperpage{18}
+  \item {create\_\discretionary {-}{}{}socket}
+    \subitem {Library}, \hyperpage{10}
+
+  \indexspace
+
+  \item {delete\_\discretionary {-}{}{}client}
+    \subitem {Server}, \hyperpage{15}
+  \item {DIMBLOCK}
+    \subitem {client\_\discretionary {-}{}{}library.h}, \hyperpage{22}
+    \subitem {server.h}, \hyperpage{24}
+  \item {dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}map}
+    \subitem {Library}, \hyperpage{11}
+  \item {dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}unmap}
+    \subitem {Library}, \hyperpage{11}
+  \item {dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}update}
+    \subitem {Library}, \hyperpage{11}
+  \item {dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}wait}
+    \subitem {Library}, \hyperpage{12}
+  \item {dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}write}
+    \subitem {Library}, \hyperpage{12}
+  \item {dm\_\discretionary {-}{}{}init}
+    \subitem {Library}, \hyperpage{11}
+
+  \indexspace
+
+  \item {find\_\discretionary {-}{}{}block}
+    \subitem {Library}, \hyperpage{10}
+    \subitem {Server}, \hyperpage{14}
+  \item {find\_\discretionary {-}{}{}client}
+    \subitem {Server}, \hyperpage{14}
+  \item {find\_\discretionary {-}{}{}server}
+    \subitem {Library}, \hyperpage{10}
+
+  \indexspace
+
+  \item {head}
+    \subitem {Library}, \hyperpage{12}
+    \subitem {Server}, \hyperpage{16}
+
+  \indexspace
+
+  \item {ID}
+    \subitem {block}, \hyperpage{6}
+    \subitem {block\_\discretionary {-}{}{}list}, \hyperpage{7}
+  \item {ip\_\discretionary {-}{}{}add}
+    \subitem {server\_\discretionary {-}{}{}list}, \hyperpage{18}
+
+  \indexspace
+
+  \item {Library}, \hyperpage{9}
+    \subitem {client\_\discretionary {-}{}{}connect}, \hyperpage{10}
+    \subitem {create\_\discretionary {-}{}{}socket}, \hyperpage{10}
+    \subitem {dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}map}, 
+		\hyperpage{11}
+    \subitem {dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}unmap}, 
+		\hyperpage{11}
+    \subitem {dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}update}, 
+		\hyperpage{11}
+    \subitem {dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}wait}, 
+		\hyperpage{12}
+    \subitem {dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}write}, 
+		\hyperpage{12}
+    \subitem {dm\_\discretionary {-}{}{}init}, \hyperpage{11}
+    \subitem {find\_\discretionary {-}{}{}block}, \hyperpage{10}
+    \subitem {find\_\discretionary {-}{}{}server}, \hyperpage{10}
+    \subitem {head}, \hyperpage{12}
+    \subitem {Library}, \hyperpage{10}
+    \subitem {read\_\discretionary {-}{}{}config\_\discretionary {-}{}{}file}, 
+		\hyperpage{11}
+  \item {line}
+    \subitem {server.h}, \hyperpage{24}
+  \item {lock}
+    \subitem {client\_\discretionary {-}{}{}list}, \hyperpage{8}
+
+  \indexspace
+
+  \item {m\_\discretionary {-}{}{}acc}
+    \subitem {server.h}, \hyperpage{24}
+  \item {MAX\_\discretionary {-}{}{}LINE\_\discretionary {-}{}{}LEN}
+    \subitem {client\_\discretionary {-}{}{}library.h}, \hyperpage{22}
+    \subitem {server.h}, \hyperpage{24}
+
+  \indexspace
+
+  \item {pointer}
+    \subitem {block}, \hyperpage{6}
+    \subitem {block\_\discretionary {-}{}{}list}, \hyperpage{7}
+  \item {port}
+    \subitem {server\_\discretionary {-}{}{}list}, \hyperpage{18}
+  \item {port\_\discretionary {-}{}{}control}
+    \subitem {Server}, \hyperpage{15}
+
+  \indexspace
+
+  \item {read\_\discretionary {-}{}{}config\_\discretionary {-}{}{}file}
+    \subitem {Library}, \hyperpage{11}
+    \subitem {Server}, \hyperpage{15}
+
+  \indexspace
+
+  \item {Server}, \hyperpage{13}
+    \subitem {add\_\discretionary {-}{}{}block}, \hyperpage{14}
+    \subitem {add\_\discretionary {-}{}{}client}, \hyperpage{15}
+    \subitem {block\_\discretionary {-}{}{}map}, \hyperpage{15}
+    \subitem {block\_\discretionary {-}{}{}unmap}, \hyperpage{16}
+    \subitem {block\_\discretionary {-}{}{}update}, \hyperpage{16}
+    \subitem {block\_\discretionary {-}{}{}wait}, \hyperpage{16}
+    \subitem {block\_\discretionary {-}{}{}write}, \hyperpage{16}
+    \subitem {change\_\discretionary {-}{}{}valid}, \hyperpage{15}
+    \subitem {client\_\discretionary {-}{}{}unblock}, \hyperpage{15}
+    \subitem {delete\_\discretionary {-}{}{}client}, \hyperpage{15}
+    \subitem {find\_\discretionary {-}{}{}block}, \hyperpage{14}
+    \subitem {find\_\discretionary {-}{}{}client}, \hyperpage{14}
+    \subitem {head}, \hyperpage{16}
+    \subitem {port\_\discretionary {-}{}{}control}, \hyperpage{15}
+    \subitem {read\_\discretionary {-}{}{}config\_\discretionary {-}{}{}file}, 
+		\hyperpage{15}
+    \subitem {Server}, \hyperpage{14}
+  \item {server.h}, \hyperpage{23}
+    \subitem {BACKLOG}, \hyperpage{24}
+    \subitem {config\_\discretionary {-}{}{}file\_\discretionary {-}{}{}path}, 
+		\hyperpage{24}
+    \subitem {DIMBLOCK}, \hyperpage{24}
+    \subitem {line}, \hyperpage{24}
+    \subitem {m\_\discretionary {-}{}{}acc}, \hyperpage{24}
+    \subitem {MAX\_\discretionary {-}{}{}LINE\_\discretionary {-}{}{}LEN}, 
+		\hyperpage{24}
+    \subitem {SERVER\_\discretionary {-}{}{}IP\_\discretionary {-}{}{}ADD}, 
+		\hyperpage{24}
+    \subitem {SERVER\_\discretionary {-}{}{}PORT}, \hyperpage{24}
+  \item {SERVER\_\discretionary {-}{}{}IP\_\discretionary {-}{}{}ADD}
+    \subitem {server.h}, \hyperpage{24}
+  \item {server\_\discretionary {-}{}{}list}, \hyperpage{18}
+    \subitem {block\_\discretionary {-}{}{}head}, \hyperpage{19}
+    \subitem {cl\_\discretionary {-}{}{}sk}, \hyperpage{18}
+    \subitem {connected}, \hyperpage{18}
+    \subitem {ip\_\discretionary {-}{}{}add}, \hyperpage{18}
+    \subitem {port}, \hyperpage{18}
+    \subitem {succ}, \hyperpage{19}
+  \item {SERVER\_\discretionary {-}{}{}PORT}
+    \subitem {server.h}, \hyperpage{24}
+  \item {succ}
+    \subitem {block}, \hyperpage{6}
+    \subitem {block\_\discretionary {-}{}{}list}, \hyperpage{7}
+    \subitem {client\_\discretionary {-}{}{}list}, \hyperpage{8}
+    \subitem {server\_\discretionary {-}{}{}list}, \hyperpage{19}
+
+  \indexspace
+
+  \item {valid}
+    \subitem {client\_\discretionary {-}{}{}list}, \hyperpage{8}
+
+\end{theindex}

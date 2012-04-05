@@ -1,0 +1,21 @@
+DISTRIBUTED MEMORY
+								
+SVILUPPATORI:	
+-   Carmine Benedetto (carmine.benedetto@gmail.com)	 				
+-   Silvio Bianchi (silv.bianchi@gmail.com)			
+
+
+INFORMAZIONI:
+
+- Per compilare i Server digitare il comando make all'interno della cartella /src.
+- Per compilare i Client digitare il comando make all'interno della cartella /test.
+- Per testare il progetto è presente uno script di shell nella cartella /test.
+- Per avviare lo script di shell, digitare ./start all'interno della cartella /test (se necessario assegnare i permessi di esecuzione allo script).
+- Lo script esegue 3 volte i 2 client di prova, e in caso di match in ogni esecuzione, stampa a video la stringa OK, altrimenti FAIL.
+- Come esempio di configurazione Server, è presente all'interno della cartella /config il file config_file.txt (2 server che gestiscono ognuno 4 blocchi).
+- Come esempio per l'esecuzione dei client di test, è presente all'interno della cartella /test il file text.txt (nel caso specifico il testo occupa 2 blocchi).
+
+
+
+
+

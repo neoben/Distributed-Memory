@@ -1,0 +1,66 @@
+\documentclass[a4paper]{book}
+\usepackage{a4wide}
+\usepackage{makeidx}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{times}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\usepackage{doxygen}
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\begin{document}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large DistributedMemory \\[1ex]\large 1.0 }\\
+\vspace*{1cm}
+{\large Generato da Doxygen 1.5.8}\\
+\vspace*{0.5cm}
+{\small Fri Feb 4 17:36:39 2011}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\chapter{Indice delle strutture dati}
+\input{annotated}
+\chapter{Indice dei file}
+\input{files}
+\chapter{Documentazione delle classi}
+\input{structblock}
+\include{structblock__list}
+\include{structclient__list}
+\include{classLibrary}
+\include{classServer}
+\include{structserver__list}
+\chapter{Documentazione dei file}
+\input{client__library_8h}
+\include{server_8h}
+\printindex
+\end{document}

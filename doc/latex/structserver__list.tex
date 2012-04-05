@@ -1,0 +1,91 @@
+\hypertarget{structserver__list}{
+\section{Riferimenti per la struct server\_\-list}
+\label{structserver__list}\index{server\_\-list@{server\_\-list}}
+}
+Struttura dati della lista di server: \hyperlink{structserver__list}{server\_\-list}.  
+
+
+{\tt \#include $<$client\_\-library.h$>$}
+
+\subsection*{Campi}
+\begin{CompactItemize}
+\item 
+char \hyperlink{structserver__list_ecade329fa4773018ee94fa73ee43d8e_ecade329fa4773018ee94fa73ee43d8e}{ip\_\-add} \mbox{[}15\mbox{]}
+\begin{CompactList}\small\item\em Indirizzo IP del server a cui si connette il client. \item\end{CompactList}\item 
+int \hyperlink{structserver__list_bb30850b4352cd990f913320d7e243b4_bb30850b4352cd990f913320d7e243b4}{port}
+\begin{CompactList}\small\item\em Porta associata all'indirizzo IP. \item\end{CompactList}\item 
+int \hyperlink{structserver__list_79719d4ab0eee7769ccba74394c8c09b_79719d4ab0eee7769ccba74394c8c09b}{cl\_\-sk}
+\begin{CompactList}\small\item\em Descrittore del socket lato client. \item\end{CompactList}\item 
+bool \hyperlink{structserver__list_4c9b2c2aaceed434fdb463dabfe487f4_4c9b2c2aaceed434fdb463dabfe487f4}{connected}
+\begin{CompactList}\small\item\em Variabile per la gestione della connessione client-server. \item\end{CompactList}\item 
+\hyperlink{structblock__list}{block\_\-list} $\ast$ \hyperlink{structserver__list_7cef5477a059bde2cd16d5da85bdf62b_7cef5477a059bde2cd16d5da85bdf62b}{block\_\-head}
+\begin{CompactList}\small\item\em Puntatore alla testa della lista di blocchi associati ad ogni server. \item\end{CompactList}\item 
+\hyperlink{structserver__list}{server\_\-list} $\ast$ \hyperlink{structserver__list_64bb0479e5e9c0e84bef62534b40495b_64bb0479e5e9c0e84bef62534b40495b}{succ}
+\begin{CompactList}\small\item\em Puntatore all'elemento successivo della lista di server a cui il client è connesso. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+Struttura dati della lista di server: \hyperlink{structserver__list}{server\_\-list}. 
+
+La struttura dati contiene l'indirizzo IP del server a cui si connette il client, la porta associata all'indirizzo IP, il descrittore del socket lato client, la variabile booleana per la gestione della connessione client-server, il puntatore alla testa della lista di blocchi associati ad ogni server, il puntatore all'elemento successivo della lista dei server a cui il client si è connesso. 
+
+\subsection{Documentazione dei campi}
+\hypertarget{structserver__list_ecade329fa4773018ee94fa73ee43d8e_ecade329fa4773018ee94fa73ee43d8e}{
+\index{server\_\-list@{server\_\-list}!ip\_\-add@{ip\_\-add}}
+\index{ip\_\-add@{ip\_\-add}!server_list@{server\_\-list}}
+\subsubsection[{ip\_\-add}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf server\_\-list::ip\_\-add}\mbox{[}15\mbox{]}}}
+\label{structserver__list_ecade329fa4773018ee94fa73ee43d8e_ecade329fa4773018ee94fa73ee43d8e}
+
+
+Indirizzo IP del server a cui si connette il client. 
+
+\hypertarget{structserver__list_bb30850b4352cd990f913320d7e243b4_bb30850b4352cd990f913320d7e243b4}{
+\index{server\_\-list@{server\_\-list}!port@{port}}
+\index{port@{port}!server_list@{server\_\-list}}
+\subsubsection[{port}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf server\_\-list::port}}}
+\label{structserver__list_bb30850b4352cd990f913320d7e243b4_bb30850b4352cd990f913320d7e243b4}
+
+
+Porta associata all'indirizzo IP. 
+
+\hypertarget{structserver__list_79719d4ab0eee7769ccba74394c8c09b_79719d4ab0eee7769ccba74394c8c09b}{
+\index{server\_\-list@{server\_\-list}!cl\_\-sk@{cl\_\-sk}}
+\index{cl\_\-sk@{cl\_\-sk}!server_list@{server\_\-list}}
+\subsubsection[{cl\_\-sk}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf server\_\-list::cl\_\-sk}}}
+\label{structserver__list_79719d4ab0eee7769ccba74394c8c09b_79719d4ab0eee7769ccba74394c8c09b}
+
+
+Descrittore del socket lato client. 
+
+\hypertarget{structserver__list_4c9b2c2aaceed434fdb463dabfe487f4_4c9b2c2aaceed434fdb463dabfe487f4}{
+\index{server\_\-list@{server\_\-list}!connected@{connected}}
+\index{connected@{connected}!server_list@{server\_\-list}}
+\subsubsection[{connected}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf server\_\-list::connected}}}
+\label{structserver__list_4c9b2c2aaceed434fdb463dabfe487f4_4c9b2c2aaceed434fdb463dabfe487f4}
+
+
+Variabile per la gestione della connessione client-server. 
+
+\hypertarget{structserver__list_7cef5477a059bde2cd16d5da85bdf62b_7cef5477a059bde2cd16d5da85bdf62b}{
+\index{server\_\-list@{server\_\-list}!block\_\-head@{block\_\-head}}
+\index{block\_\-head@{block\_\-head}!server_list@{server\_\-list}}
+\subsubsection[{block\_\-head}]{\setlength{\rightskip}{0pt plus 5cm}{\bf block\_\-list}$\ast$ {\bf server\_\-list::block\_\-head}}}
+\label{structserver__list_7cef5477a059bde2cd16d5da85bdf62b_7cef5477a059bde2cd16d5da85bdf62b}
+
+
+Puntatore alla testa della lista di blocchi associati ad ogni server. 
+
+\hypertarget{structserver__list_64bb0479e5e9c0e84bef62534b40495b_64bb0479e5e9c0e84bef62534b40495b}{
+\index{server\_\-list@{server\_\-list}!succ@{succ}}
+\index{succ@{succ}!server_list@{server\_\-list}}
+\subsubsection[{succ}]{\setlength{\rightskip}{0pt plus 5cm}{\bf server\_\-list}$\ast$ {\bf server\_\-list::succ}}}
+\label{structserver__list_64bb0479e5e9c0e84bef62534b40495b_64bb0479e5e9c0e84bef62534b40495b}
+
+
+Puntatore all'elemento successivo della lista di server a cui il client è connesso. 
+
+
+
+La documentazione per questa struct è stata generata a partire dal seguente file:\begin{CompactItemize}
+\item 
+\hyperlink{client__library_8h}{client\_\-library.h}\end{CompactItemize}

@@ -1,0 +1,126 @@
+\indexentry{block@{block}|hyperpage}{5}
+\indexentry{block@{block}!ID@{ID}|hyperpage}{6}
+\indexentry{ID@{ID}!block@{block}|hyperpage}{6}
+\indexentry{block@{block}!pointer@{pointer}|hyperpage}{6}
+\indexentry{pointer@{pointer}!block@{block}|hyperpage}{6}
+\indexentry{block@{block}!b\_\discretionary {-}{}{}acc@{b\_\discretionary {-}{}{}acc}|hyperpage}{6}
+\indexentry{b\_\discretionary {-}{}{}acc@{b\_\discretionary {-}{}{}acc}!block@{block}|hyperpage}{6}
+\indexentry{block@{block}!cl\_\discretionary {-}{}{}ptr@{cl\_\discretionary {-}{}{}ptr}|hyperpage}{6}
+\indexentry{cl\_\discretionary {-}{}{}ptr@{cl\_\discretionary {-}{}{}ptr}!block@{block}|hyperpage}{6}
+\indexentry{block@{block}!succ@{succ}|hyperpage}{6}
+\indexentry{succ@{succ}!block@{block}|hyperpage}{6}
+\indexentry{block\_\discretionary {-}{}{}list@{block\_\discretionary {-}{}{}list}|hyperpage}{7}
+\indexentry{block\_\discretionary {-}{}{}list@{block\_\discretionary {-}{}{}list}!ID@{ID}|hyperpage}{7}
+\indexentry{ID@{ID}!block_list@{block\_\discretionary {-}{}{}list}|hyperpage}{7}
+\indexentry{block\_\discretionary {-}{}{}list@{block\_\discretionary {-}{}{}list}!pointer@{pointer}|hyperpage}{7}
+\indexentry{pointer@{pointer}!block_list@{block\_\discretionary {-}{}{}list}|hyperpage}{7}
+\indexentry{block\_\discretionary {-}{}{}list@{block\_\discretionary {-}{}{}list}!associated@{associated}|hyperpage}{7}
+\indexentry{associated@{associated}!block_list@{block\_\discretionary {-}{}{}list}|hyperpage}{7}
+\indexentry{block\_\discretionary {-}{}{}list@{block\_\discretionary {-}{}{}list}!succ@{succ}|hyperpage}{7}
+\indexentry{succ@{succ}!block_list@{block\_\discretionary {-}{}{}list}|hyperpage}{7}
+\indexentry{client\_\discretionary {-}{}{}list@{client\_\discretionary {-}{}{}list}|hyperpage}{8}
+\indexentry{client\_\discretionary {-}{}{}list@{client\_\discretionary {-}{}{}list}!cl\_\discretionary {-}{}{}ID@{cl\_\discretionary {-}{}{}ID}|hyperpage}{8}
+\indexentry{cl\_\discretionary {-}{}{}ID@{cl\_\discretionary {-}{}{}ID}!client_list@{client\_\discretionary {-}{}{}list}|hyperpage}{8}
+\indexentry{client\_\discretionary {-}{}{}list@{client\_\discretionary {-}{}{}list}!valid@{valid}|hyperpage}{8}
+\indexentry{valid@{valid}!client_list@{client\_\discretionary {-}{}{}list}|hyperpage}{8}
+\indexentry{client\_\discretionary {-}{}{}list@{client\_\discretionary {-}{}{}list}!lock@{lock}|hyperpage}{8}
+\indexentry{lock@{lock}!client_list@{client\_\discretionary {-}{}{}list}|hyperpage}{8}
+\indexentry{client\_\discretionary {-}{}{}list@{client\_\discretionary {-}{}{}list}!succ@{succ}|hyperpage}{8}
+\indexentry{succ@{succ}!client_list@{client\_\discretionary {-}{}{}list}|hyperpage}{8}
+\indexentry{Library@{Library}|hyperpage}{9}
+\indexentry{Library@{Library}!Library@{Library}|hyperpage}{10}
+\indexentry{Library@{Library}!Library@{Library}|hyperpage}{10}
+\indexentry{Library@{Library}!find\_\discretionary {-}{}{}server@{find\_\discretionary {-}{}{}server}|hyperpage}{10}
+\indexentry{find\_\discretionary {-}{}{}server@{find\_\discretionary {-}{}{}server}!Library@{Library}|hyperpage}{10}
+\indexentry{Library@{Library}!find\_\discretionary {-}{}{}block@{find\_\discretionary {-}{}{}block}|hyperpage}{10}
+\indexentry{find\_\discretionary {-}{}{}block@{find\_\discretionary {-}{}{}block}!Library@{Library}|hyperpage}{10}
+\indexentry{Library@{Library}!create\_\discretionary {-}{}{}socket@{create\_\discretionary {-}{}{}socket}|hyperpage}{10}
+\indexentry{create\_\discretionary {-}{}{}socket@{create\_\discretionary {-}{}{}socket}!Library@{Library}|hyperpage}{10}
+\indexentry{Library@{Library}!client\_\discretionary {-}{}{}connect@{client\_\discretionary {-}{}{}connect}|hyperpage}{10}
+\indexentry{client\_\discretionary {-}{}{}connect@{client\_\discretionary {-}{}{}connect}!Library@{Library}|hyperpage}{10}
+\indexentry{Library@{Library}!read\_\discretionary {-}{}{}config\_\discretionary {-}{}{}file@{read\_\discretionary {-}{}{}config\_\discretionary {-}{}{}file}|hyperpage}{11}
+\indexentry{read\_\discretionary {-}{}{}config\_\discretionary {-}{}{}file@{read\_\discretionary {-}{}{}config\_\discretionary {-}{}{}file}!Library@{Library}|hyperpage}{11}
+\indexentry{Library@{Library}!dm\_\discretionary {-}{}{}init@{dm\_\discretionary {-}{}{}init}|hyperpage}{11}
+\indexentry{dm\_\discretionary {-}{}{}init@{dm\_\discretionary {-}{}{}init}!Library@{Library}|hyperpage}{11}
+\indexentry{Library@{Library}!dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}map@{dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}map}|hyperpage}{11}
+\indexentry{dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}map@{dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}map}!Library@{Library}|hyperpage}{11}
+\indexentry{Library@{Library}!dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}unmap@{dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}unmap}|hyperpage}{11}
+\indexentry{dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}unmap@{dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}unmap}!Library@{Library}|hyperpage}{11}
+\indexentry{Library@{Library}!dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}update@{dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}update}|hyperpage}{11}
+\indexentry{dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}update@{dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}update}!Library@{Library}|hyperpage}{11}
+\indexentry{Library@{Library}!dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}write@{dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}write}|hyperpage}{12}
+\indexentry{dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}write@{dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}write}!Library@{Library}|hyperpage}{12}
+\indexentry{Library@{Library}!dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}wait@{dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}wait}|hyperpage}{12}
+\indexentry{dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}wait@{dm\_\discretionary {-}{}{}block\_\discretionary {-}{}{}wait}!Library@{Library}|hyperpage}{12}
+\indexentry{Library@{Library}!head@{head}|hyperpage}{12}
+\indexentry{head@{head}!Library@{Library}|hyperpage}{12}
+\indexentry{Server@{Server}|hyperpage}{13}
+\indexentry{Server@{Server}!Server@{Server}|hyperpage}{14}
+\indexentry{Server@{Server}!Server@{Server}|hyperpage}{14}
+\indexentry{Server@{Server}!add\_\discretionary {-}{}{}block@{add\_\discretionary {-}{}{}block}|hyperpage}{14}
+\indexentry{add\_\discretionary {-}{}{}block@{add\_\discretionary {-}{}{}block}!Server@{Server}|hyperpage}{14}
+\indexentry{Server@{Server}!find\_\discretionary {-}{}{}block@{find\_\discretionary {-}{}{}block}|hyperpage}{14}
+\indexentry{find\_\discretionary {-}{}{}block@{find\_\discretionary {-}{}{}block}!Server@{Server}|hyperpage}{14}
+\indexentry{Server@{Server}!find\_\discretionary {-}{}{}client@{find\_\discretionary {-}{}{}client}|hyperpage}{14}
+\indexentry{find\_\discretionary {-}{}{}client@{find\_\discretionary {-}{}{}client}!Server@{Server}|hyperpage}{14}
+\indexentry{Server@{Server}!add\_\discretionary {-}{}{}client@{add\_\discretionary {-}{}{}client}|hyperpage}{15}
+\indexentry{add\_\discretionary {-}{}{}client@{add\_\discretionary {-}{}{}client}!Server@{Server}|hyperpage}{15}
+\indexentry{Server@{Server}!delete\_\discretionary {-}{}{}client@{delete\_\discretionary {-}{}{}client}|hyperpage}{15}
+\indexentry{delete\_\discretionary {-}{}{}client@{delete\_\discretionary {-}{}{}client}!Server@{Server}|hyperpage}{15}
+\indexentry{Server@{Server}!change\_\discretionary {-}{}{}valid@{change\_\discretionary {-}{}{}valid}|hyperpage}{15}
+\indexentry{change\_\discretionary {-}{}{}valid@{change\_\discretionary {-}{}{}valid}!Server@{Server}|hyperpage}{15}
+\indexentry{Server@{Server}!client\_\discretionary {-}{}{}unblock@{client\_\discretionary {-}{}{}unblock}|hyperpage}{15}
+\indexentry{client\_\discretionary {-}{}{}unblock@{client\_\discretionary {-}{}{}unblock}!Server@{Server}|hyperpage}{15}
+\indexentry{Server@{Server}!port\_\discretionary {-}{}{}control@{port\_\discretionary {-}{}{}control}|hyperpage}{15}
+\indexentry{port\_\discretionary {-}{}{}control@{port\_\discretionary {-}{}{}control}!Server@{Server}|hyperpage}{15}
+\indexentry{Server@{Server}!read\_\discretionary {-}{}{}config\_\discretionary {-}{}{}file@{read\_\discretionary {-}{}{}config\_\discretionary {-}{}{}file}|hyperpage}{15}
+\indexentry{read\_\discretionary {-}{}{}config\_\discretionary {-}{}{}file@{read\_\discretionary {-}{}{}config\_\discretionary {-}{}{}file}!Server@{Server}|hyperpage}{15}
+\indexentry{Server@{Server}!block\_\discretionary {-}{}{}map@{block\_\discretionary {-}{}{}map}|hyperpage}{15}
+\indexentry{block\_\discretionary {-}{}{}map@{block\_\discretionary {-}{}{}map}!Server@{Server}|hyperpage}{15}
+\indexentry{Server@{Server}!block\_\discretionary {-}{}{}unmap@{block\_\discretionary {-}{}{}unmap}|hyperpage}{16}
+\indexentry{block\_\discretionary {-}{}{}unmap@{block\_\discretionary {-}{}{}unmap}!Server@{Server}|hyperpage}{16}
+\indexentry{Server@{Server}!block\_\discretionary {-}{}{}update@{block\_\discretionary {-}{}{}update}|hyperpage}{16}
+\indexentry{block\_\discretionary {-}{}{}update@{block\_\discretionary {-}{}{}update}!Server@{Server}|hyperpage}{16}
+\indexentry{Server@{Server}!block\_\discretionary {-}{}{}write@{block\_\discretionary {-}{}{}write}|hyperpage}{16}
+\indexentry{block\_\discretionary {-}{}{}write@{block\_\discretionary {-}{}{}write}!Server@{Server}|hyperpage}{16}
+\indexentry{Server@{Server}!block\_\discretionary {-}{}{}wait@{block\_\discretionary {-}{}{}wait}|hyperpage}{16}
+\indexentry{block\_\discretionary {-}{}{}wait@{block\_\discretionary {-}{}{}wait}!Server@{Server}|hyperpage}{16}
+\indexentry{Server@{Server}!head@{head}|hyperpage}{16}
+\indexentry{head@{head}!Server@{Server}|hyperpage}{16}
+\indexentry{server\_\discretionary {-}{}{}list@{server\_\discretionary {-}{}{}list}|hyperpage}{18}
+\indexentry{server\_\discretionary {-}{}{}list@{server\_\discretionary {-}{}{}list}!ip\_\discretionary {-}{}{}add@{ip\_\discretionary {-}{}{}add}|hyperpage}{18}
+\indexentry{ip\_\discretionary {-}{}{}add@{ip\_\discretionary {-}{}{}add}!server_list@{server\_\discretionary {-}{}{}list}|hyperpage}{18}
+\indexentry{server\_\discretionary {-}{}{}list@{server\_\discretionary {-}{}{}list}!port@{port}|hyperpage}{18}
+\indexentry{port@{port}!server_list@{server\_\discretionary {-}{}{}list}|hyperpage}{18}
+\indexentry{server\_\discretionary {-}{}{}list@{server\_\discretionary {-}{}{}list}!cl\_\discretionary {-}{}{}sk@{cl\_\discretionary {-}{}{}sk}|hyperpage}{18}
+\indexentry{cl\_\discretionary {-}{}{}sk@{cl\_\discretionary {-}{}{}sk}!server_list@{server\_\discretionary {-}{}{}list}|hyperpage}{18}
+\indexentry{server\_\discretionary {-}{}{}list@{server\_\discretionary {-}{}{}list}!connected@{connected}|hyperpage}{18}
+\indexentry{connected@{connected}!server_list@{server\_\discretionary {-}{}{}list}|hyperpage}{18}
+\indexentry{server\_\discretionary {-}{}{}list@{server\_\discretionary {-}{}{}list}!block\_\discretionary {-}{}{}head@{block\_\discretionary {-}{}{}head}|hyperpage}{19}
+\indexentry{block\_\discretionary {-}{}{}head@{block\_\discretionary {-}{}{}head}!server_list@{server\_\discretionary {-}{}{}list}|hyperpage}{19}
+\indexentry{server\_\discretionary {-}{}{}list@{server\_\discretionary {-}{}{}list}!succ@{succ}|hyperpage}{19}
+\indexentry{succ@{succ}!server_list@{server\_\discretionary {-}{}{}list}|hyperpage}{19}
+\indexentry{client\_\discretionary {-}{}{}library.h@{client\_\discretionary {-}{}{}library.h}|hyperpage}{21}
+\indexentry{client\_\discretionary {-}{}{}library.h@{client\_\discretionary {-}{}{}library.h}!BACKLOG@{BACKLOG}|hyperpage}{22}
+\indexentry{BACKLOG@{BACKLOG}!client_library.h@{client\_\discretionary {-}{}{}library.h}|hyperpage}{22}
+\indexentry{client\_\discretionary {-}{}{}library.h@{client\_\discretionary {-}{}{}library.h}!MAX\_\discretionary {-}{}{}LINE\_\discretionary {-}{}{}LEN@{MAX\_\discretionary {-}{}{}LINE\_\discretionary {-}{}{}LEN}|hyperpage}{22}
+\indexentry{MAX\_\discretionary {-}{}{}LINE\_\discretionary {-}{}{}LEN@{MAX\_\discretionary {-}{}{}LINE\_\discretionary {-}{}{}LEN}!client_library.h@{client\_\discretionary {-}{}{}library.h}|hyperpage}{22}
+\indexentry{client\_\discretionary {-}{}{}library.h@{client\_\discretionary {-}{}{}library.h}!DIMBLOCK@{DIMBLOCK}|hyperpage}{22}
+\indexentry{DIMBLOCK@{DIMBLOCK}!client_library.h@{client\_\discretionary {-}{}{}library.h}|hyperpage}{22}
+\indexentry{server.h@{server.h}|hyperpage}{23}
+\indexentry{server.h@{server.h}!BACKLOG@{BACKLOG}|hyperpage}{24}
+\indexentry{BACKLOG@{BACKLOG}!server.h@{server.h}|hyperpage}{24}
+\indexentry{server.h@{server.h}!MAX\_\discretionary {-}{}{}LINE\_\discretionary {-}{}{}LEN@{MAX\_\discretionary {-}{}{}LINE\_\discretionary {-}{}{}LEN}|hyperpage}{24}
+\indexentry{MAX\_\discretionary {-}{}{}LINE\_\discretionary {-}{}{}LEN@{MAX\_\discretionary {-}{}{}LINE\_\discretionary {-}{}{}LEN}!server.h@{server.h}|hyperpage}{24}
+\indexentry{server.h@{server.h}!DIMBLOCK@{DIMBLOCK}|hyperpage}{24}
+\indexentry{DIMBLOCK@{DIMBLOCK}!server.h@{server.h}|hyperpage}{24}
+\indexentry{server.h@{server.h}!SERVER\_\discretionary {-}{}{}IP\_\discretionary {-}{}{}ADD@{SERVER\_\discretionary {-}{}{}IP\_\discretionary {-}{}{}ADD}|hyperpage}{24}
+\indexentry{SERVER\_\discretionary {-}{}{}IP\_\discretionary {-}{}{}ADD@{SERVER\_\discretionary {-}{}{}IP\_\discretionary {-}{}{}ADD}!server.h@{server.h}|hyperpage}{24}
+\indexentry{server.h@{server.h}!SERVER\_\discretionary {-}{}{}PORT@{SERVER\_\discretionary {-}{}{}PORT}|hyperpage}{24}
+\indexentry{SERVER\_\discretionary {-}{}{}PORT@{SERVER\_\discretionary {-}{}{}PORT}!server.h@{server.h}|hyperpage}{24}
+\indexentry{server.h@{server.h}!config\_\discretionary {-}{}{}file\_\discretionary {-}{}{}path@{config\_\discretionary {-}{}{}file\_\discretionary {-}{}{}path}|hyperpage}{24}
+\indexentry{config\_\discretionary {-}{}{}file\_\discretionary {-}{}{}path@{config\_\discretionary {-}{}{}file\_\discretionary {-}{}{}path}!server.h@{server.h}|hyperpage}{24}
+\indexentry{server.h@{server.h}!line@{line}|hyperpage}{24}
+\indexentry{line@{line}!server.h@{server.h}|hyperpage}{24}
+\indexentry{server.h@{server.h}!m\_\discretionary {-}{}{}acc@{m\_\discretionary {-}{}{}acc}|hyperpage}{24}
+\indexentry{m\_\discretionary {-}{}{}acc@{m\_\discretionary {-}{}{}acc}!server.h@{server.h}|hyperpage}{24}

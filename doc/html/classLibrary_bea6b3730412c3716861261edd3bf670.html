@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>DistributedMemory: Library::dm_block_write</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generato da Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Pagina&nbsp;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&nbsp;dati</span></a></li>
+      <li><a href="files.html"><span>File</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+  <div class="navpath"><a class="el" href="classLibrary.html">Library</a>
+  </div>
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+   <td valign="top">
+      <div class="navtab">
+        <table>
+          <tr><td class="navtab"><a class="qindex" href="classLibrary_993a8c688576ea49b82283bd5c38c7b5.html#993a8c688576ea49b82283bd5c38c7b5">client_connect</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classLibrary_cd3582484c72ce7f8758a31e050d64e7.html#cd3582484c72ce7f8758a31e050d64e7">create_socket</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classLibrary_e65e1654765c8a7d764ea9638b735c6f.html#e65e1654765c8a7d764ea9638b735c6f">dm_block_map</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classLibrary_f9cacba594b2d8ad1f01d73755ef79aa.html#f9cacba594b2d8ad1f01d73755ef79aa">dm_block_unmap</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classLibrary_1f541c7e1158ffb4d6d0f976dba29d71.html#1f541c7e1158ffb4d6d0f976dba29d71">dm_block_update</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classLibrary_467dc5e619aeb35ac8d5ac78b48dd450.html#467dc5e619aeb35ac8d5ac78b48dd450">dm_block_wait</a></td></tr>
+          <tr><td class="navtab"><a class="qindexHL" href="classLibrary_bea6b3730412c3716861261edd3bf670.html#bea6b3730412c3716861261edd3bf670">dm_block_write</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classLibrary_ddfd88aedfe05852d065db2644172c52.html#ddfd88aedfe05852d065db2644172c52">dm_init</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classLibrary_576c1813ccd1f66558aa29a72bc9a48d.html#576c1813ccd1f66558aa29a72bc9a48d">find_block</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classLibrary_8af440e19a373cd2feabfec14509201c.html#8af440e19a373cd2feabfec14509201c">find_server</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classLibrary_eced31f89cfa5a81b832dddfe84c43f7.html#eced31f89cfa5a81b832dddfe84c43f7">head</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classLibrary_82338219d8bf51962ff5f60a0db21b19.html#82338219d8bf51962ff5f60a0db21b19">Library</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="classLibrary_e64f3f91067ea280395d09420d961901.html#e64f3f91067ea280395d09420d961901">read_config_file</a></td></tr>
+        </table>
+      </div>
+   </td>
+   <td valign="top">
+<a class="anchor" name="bea6b3730412c3716861261edd3bf670"></a><!-- doxytag: member="Library::dm_block_write" ref="bea6b3730412c3716861261edd3bf670" args="(int ID)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Library::dm_block_write           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>ID</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+int <a class="el" href="classLibrary_bea6b3730412c3716861261edd3bf670.html#bea6b3730412c3716861261edd3bf670" title="int dm_block_write(int ID): funzione pubblica che sincronizza il contenuto locale...">dm_block_write(int ID)</a>: funzione pubblica che sincronizza il contenuto locale del blocco con il contenuto globale sul server. 
+<p>
+La funzione trova il server che contiene il blocco ID richiamando la find_server, trova il blocco interessato richiamando la find_block, invia il comando relativo all'operazione dal svolgere al server, invia l'ID del blocco interessato al server, riceve il controllo sulla validità della copia locale del blocco dal server e se la copia locale risulta valida sincronizza il contenuto locale del blocco con il contenuto globale sul server. La funzione ritorna con errore (con codici di errori diversi) nel caso in cui il blocco non era stato associato ad alcun indirizzo di memoria locale, la copia locale del blocco risulta invalida, il server non risponde. La funzione restituisce 1 in caso di successo. 
+</div>
+</div><p>
+    </td>
+  </tr>
+</table>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generato il Fri Feb 4 17:36:40 2011 per DistributedMemory da&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

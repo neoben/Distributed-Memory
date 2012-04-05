@@ -1,0 +1,122 @@
+\hypertarget{server_8h}{
+\section{Riferimenti per il file server.h}
+\label{server_8h}\index{server.h@{server.h}}
+}
+{\tt \#include $<$iostream$>$}\par
+{\tt \#include $<$fstream$>$}\par
+{\tt \#include $<$cstring$>$}\par
+{\tt \#include $<$stdlib.h$>$}\par
+{\tt \#include $<$sys/socket.h$>$}\par
+{\tt \#include $<$netinet/in.h$>$}\par
+{\tt \#include $<$arpa/inet.h$>$}\par
+{\tt \#include $<$strings.h$>$}\par
+{\tt \#include $<$pthread.h$>$}\par
+\subsection*{Strutture dati}
+\begin{CompactItemize}
+\item 
+struct \hyperlink{structclient__list}{client\_\-list}
+\begin{CompactList}\small\item\em Struttura dati della lista di client associati al blocco: \hyperlink{structclient__list}{client\_\-list}. \item\end{CompactList}\item 
+struct \hyperlink{structblock}{block}
+\begin{CompactList}\small\item\em Struttura dati del blocco di memoria: \hyperlink{structblock}{block}. \item\end{CompactList}\item 
+class \hyperlink{classServer}{Server}
+\begin{CompactList}\small\item\em Classe \hyperlink{classServer}{Server}. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Definizioni}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{server_8h_eefbbafa97642defe3ee6c3080b7d66f_eefbbafa97642defe3ee6c3080b7d66f}{BACKLOG}~5
+\begin{CompactList}\small\item\em Numero massimo di richieste di connessione che si possono accodare. \item\end{CompactList}\item 
+\#define \hyperlink{server_8h_09a3b394b8602092d58347b791158062_09a3b394b8602092d58347b791158062}{MAX\_\-LINE\_\-LEN}~1024
+\begin{CompactList}\small\item\em Lunghezza massima di ogni riga del file di configurazione. \item\end{CompactList}\item 
+\#define \hyperlink{server_8h_9d268e8e328e69ed44c8f1fc6707ae60_9d268e8e328e69ed44c8f1fc6707ae60}{DIMBLOCK}~128$\ast$sizeof(char)
+\begin{CompactList}\small\item\em Dimensione del blocco di memoria in bytes. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Variabili}
+\begin{CompactItemize}
+\item 
+char $\ast$ \hyperlink{server_8h_86773fdd80f2382eba682b68ba5ab46c_86773fdd80f2382eba682b68ba5ab46c}{SERVER\_\-IP\_\-ADD}
+\begin{CompactList}\small\item\em Indirizzo IP del server. \item\end{CompactList}\item 
+int \hyperlink{server_8h_2ebf8e2ef14a1178abb087494df83399_2ebf8e2ef14a1178abb087494df83399}{SERVER\_\-PORT}
+\begin{CompactList}\small\item\em Porta associata all'indirizzo IP del server. \item\end{CompactList}\item 
+const char $\ast$ \hyperlink{server_8h_26565396cc22008505f443cae1228ce0_26565396cc22008505f443cae1228ce0}{config\_\-file\_\-path}
+\begin{CompactList}\small\item\em Path del file di configurazione. \item\end{CompactList}\item 
+char \hyperlink{server_8h_fba1652213778b797cb4979336b83b69_fba1652213778b797cb4979336b83b69}{line} \mbox{[}MAX\_\-LINE\_\-LEN\mbox{]}
+\begin{CompactList}\small\item\em Stringa di appoggio per il contenuto del file di configurazione. \item\end{CompactList}\item 
+pthread\_\-mutex\_\-t \hyperlink{server_8h_98114be66911f7843fe69913ef2f2925_98114be66911f7843fe69913ef2f2925}{m\_\-acc}
+\begin{CompactList}\small\item\em Semaforo di mutua esclusione. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Documentazione delle definizioni}
+\hypertarget{server_8h_eefbbafa97642defe3ee6c3080b7d66f_eefbbafa97642defe3ee6c3080b7d66f}{
+\index{server.h@{server.h}!BACKLOG@{BACKLOG}}
+\index{BACKLOG@{BACKLOG}!server.h@{server.h}}
+\subsubsection[{BACKLOG}]{\setlength{\rightskip}{0pt plus 5cm}\#define BACKLOG~5}}
+\label{server_8h_eefbbafa97642defe3ee6c3080b7d66f_eefbbafa97642defe3ee6c3080b7d66f}
+
+
+Numero massimo di richieste di connessione che si possono accodare. 
+
+\hypertarget{server_8h_09a3b394b8602092d58347b791158062_09a3b394b8602092d58347b791158062}{
+\index{server.h@{server.h}!MAX\_\-LINE\_\-LEN@{MAX\_\-LINE\_\-LEN}}
+\index{MAX\_\-LINE\_\-LEN@{MAX\_\-LINE\_\-LEN}!server.h@{server.h}}
+\subsubsection[{MAX\_\-LINE\_\-LEN}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-LINE\_\-LEN~1024}}
+\label{server_8h_09a3b394b8602092d58347b791158062_09a3b394b8602092d58347b791158062}
+
+
+Lunghezza massima di ogni riga del file di configurazione. 
+
+\hypertarget{server_8h_9d268e8e328e69ed44c8f1fc6707ae60_9d268e8e328e69ed44c8f1fc6707ae60}{
+\index{server.h@{server.h}!DIMBLOCK@{DIMBLOCK}}
+\index{DIMBLOCK@{DIMBLOCK}!server.h@{server.h}}
+\subsubsection[{DIMBLOCK}]{\setlength{\rightskip}{0pt plus 5cm}\#define DIMBLOCK~128$\ast$sizeof(char)}}
+\label{server_8h_9d268e8e328e69ed44c8f1fc6707ae60_9d268e8e328e69ed44c8f1fc6707ae60}
+
+
+Dimensione del blocco di memoria in bytes. 
+
+
+
+\subsection{Documentazione delle variabili}
+\hypertarget{server_8h_86773fdd80f2382eba682b68ba5ab46c_86773fdd80f2382eba682b68ba5ab46c}{
+\index{server.h@{server.h}!SERVER\_\-IP\_\-ADD@{SERVER\_\-IP\_\-ADD}}
+\index{SERVER\_\-IP\_\-ADD@{SERVER\_\-IP\_\-ADD}!server.h@{server.h}}
+\subsubsection[{SERVER\_\-IP\_\-ADD}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf SERVER\_\-IP\_\-ADD}}}
+\label{server_8h_86773fdd80f2382eba682b68ba5ab46c_86773fdd80f2382eba682b68ba5ab46c}
+
+
+Indirizzo IP del server. 
+
+\hypertarget{server_8h_2ebf8e2ef14a1178abb087494df83399_2ebf8e2ef14a1178abb087494df83399}{
+\index{server.h@{server.h}!SERVER\_\-PORT@{SERVER\_\-PORT}}
+\index{SERVER\_\-PORT@{SERVER\_\-PORT}!server.h@{server.h}}
+\subsubsection[{SERVER\_\-PORT}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf SERVER\_\-PORT}}}
+\label{server_8h_2ebf8e2ef14a1178abb087494df83399_2ebf8e2ef14a1178abb087494df83399}
+
+
+Porta associata all'indirizzo IP del server. 
+
+\hypertarget{server_8h_26565396cc22008505f443cae1228ce0_26565396cc22008505f443cae1228ce0}{
+\index{server.h@{server.h}!config\_\-file\_\-path@{config\_\-file\_\-path}}
+\index{config\_\-file\_\-path@{config\_\-file\_\-path}!server.h@{server.h}}
+\subsubsection[{config\_\-file\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf config\_\-file\_\-path}}}
+\label{server_8h_26565396cc22008505f443cae1228ce0_26565396cc22008505f443cae1228ce0}
+
+
+Path del file di configurazione. 
+
+\hypertarget{server_8h_fba1652213778b797cb4979336b83b69_fba1652213778b797cb4979336b83b69}{
+\index{server.h@{server.h}!line@{line}}
+\index{line@{line}!server.h@{server.h}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf line}\mbox{[}MAX\_\-LINE\_\-LEN\mbox{]}}}
+\label{server_8h_fba1652213778b797cb4979336b83b69_fba1652213778b797cb4979336b83b69}
+
+
+Stringa di appoggio per il contenuto del file di configurazione. 
+
+\hypertarget{server_8h_98114be66911f7843fe69913ef2f2925_98114be66911f7843fe69913ef2f2925}{
+\index{server.h@{server.h}!m\_\-acc@{m\_\-acc}}
+\index{m\_\-acc@{m\_\-acc}!server.h@{server.h}}
+\subsubsection[{m\_\-acc}]{\setlength{\rightskip}{0pt plus 5cm}pthread\_\-mutex\_\-t {\bf m\_\-acc}}}
+\label{server_8h_98114be66911f7843fe69913ef2f2925_98114be66911f7843fe69913ef2f2925}
+
+
+Semaforo di mutua esclusione. 
+

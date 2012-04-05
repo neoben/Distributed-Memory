@@ -1,0 +1,80 @@
+\hypertarget{structblock}{
+\section{Riferimenti per la struct block}
+\label{structblock}\index{block@{block}}
+}
+Struttura dati del blocco di memoria: \hyperlink{structblock}{block}.  
+
+
+{\tt \#include $<$server.h$>$}
+
+\subsection*{Campi}
+\begin{CompactItemize}
+\item 
+int \hyperlink{structblock_c56acfb3538cc5823dc0223f812f87ce_c56acfb3538cc5823dc0223f812f87ce}{ID}
+\begin{CompactList}\small\item\em ID del blocco allocato in memoria. \item\end{CompactList}\item 
+void $\ast$ \hyperlink{structblock_bcf5e0be544c8d79ef9037ecfb46bb4c_bcf5e0be544c8d79ef9037ecfb46bb4c}{pointer}
+\begin{CompactList}\small\item\em Puntatore alla prima cella di memoria in cui è memorizzato il blocco. \item\end{CompactList}\item 
+pthread\_\-mutex\_\-t \hyperlink{structblock_36a983c8b5ed4f991ed2be58cebb506e_36a983c8b5ed4f991ed2be58cebb506e}{b\_\-acc}
+\begin{CompactList}\small\item\em Semaforo per la gestione della mutua esclusione sul blocco. \item\end{CompactList}\item 
+\hyperlink{structclient__list}{client\_\-list} $\ast$ \hyperlink{structblock_8fdcef9d38100ca24b13bd7d90efe54f_8fdcef9d38100ca24b13bd7d90efe54f}{cl\_\-ptr}
+\begin{CompactList}\small\item\em Puntatore alla testa della lista dei client connessi al server. \item\end{CompactList}\item 
+\hyperlink{structblock}{block} $\ast$ \hyperlink{structblock_820194802c67def63d15586d5d9e5fe6_820194802c67def63d15586d5d9e5fe6}{succ}
+\begin{CompactList}\small\item\em Puntatore al blocco successivo. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+Struttura dati del blocco di memoria: \hyperlink{structblock}{block}. 
+
+La struttura dati contiene l'ID del blocco allocato in memoria, il puntatore alla prima cella di memoria in cui è memorizzato il blocco, il semaforo per la gestione della mutua esclusione sul blocco, il puntatore alla testa della lista dei client connessi al server, il puntatore al blocco successivo. 
+
+\subsection{Documentazione dei campi}
+\hypertarget{structblock_c56acfb3538cc5823dc0223f812f87ce_c56acfb3538cc5823dc0223f812f87ce}{
+\index{block@{block}!ID@{ID}}
+\index{ID@{ID}!block@{block}}
+\subsubsection[{ID}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf block::ID}}}
+\label{structblock_c56acfb3538cc5823dc0223f812f87ce_c56acfb3538cc5823dc0223f812f87ce}
+
+
+ID del blocco allocato in memoria. 
+
+\hypertarget{structblock_bcf5e0be544c8d79ef9037ecfb46bb4c_bcf5e0be544c8d79ef9037ecfb46bb4c}{
+\index{block@{block}!pointer@{pointer}}
+\index{pointer@{pointer}!block@{block}}
+\subsubsection[{pointer}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ {\bf block::pointer}}}
+\label{structblock_bcf5e0be544c8d79ef9037ecfb46bb4c_bcf5e0be544c8d79ef9037ecfb46bb4c}
+
+
+Puntatore alla prima cella di memoria in cui è memorizzato il blocco. 
+
+\hypertarget{structblock_36a983c8b5ed4f991ed2be58cebb506e_36a983c8b5ed4f991ed2be58cebb506e}{
+\index{block@{block}!b\_\-acc@{b\_\-acc}}
+\index{b\_\-acc@{b\_\-acc}!block@{block}}
+\subsubsection[{b\_\-acc}]{\setlength{\rightskip}{0pt plus 5cm}pthread\_\-mutex\_\-t {\bf block::b\_\-acc}}}
+\label{structblock_36a983c8b5ed4f991ed2be58cebb506e_36a983c8b5ed4f991ed2be58cebb506e}
+
+
+Semaforo per la gestione della mutua esclusione sul blocco. 
+
+\hypertarget{structblock_8fdcef9d38100ca24b13bd7d90efe54f_8fdcef9d38100ca24b13bd7d90efe54f}{
+\index{block@{block}!cl\_\-ptr@{cl\_\-ptr}}
+\index{cl\_\-ptr@{cl\_\-ptr}!block@{block}}
+\subsubsection[{cl\_\-ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf client\_\-list}$\ast$ {\bf block::cl\_\-ptr}}}
+\label{structblock_8fdcef9d38100ca24b13bd7d90efe54f_8fdcef9d38100ca24b13bd7d90efe54f}
+
+
+Puntatore alla testa della lista dei client connessi al server. 
+
+\hypertarget{structblock_820194802c67def63d15586d5d9e5fe6_820194802c67def63d15586d5d9e5fe6}{
+\index{block@{block}!succ@{succ}}
+\index{succ@{succ}!block@{block}}
+\subsubsection[{succ}]{\setlength{\rightskip}{0pt plus 5cm}{\bf block}$\ast$ {\bf block::succ}}}
+\label{structblock_820194802c67def63d15586d5d9e5fe6_820194802c67def63d15586d5d9e5fe6}
+
+
+Puntatore al blocco successivo. 
+
+
+
+La documentazione per questa struct è stata generata a partire dal seguente file:\begin{CompactItemize}
+\item 
+\hyperlink{server_8h}{server.h}\end{CompactItemize}

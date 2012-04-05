@@ -1,0 +1,61 @@
+\hypertarget{client__library_8h}{
+\section{Riferimenti per il file client\_\-library.h}
+\label{client__library_8h}\index{client\_\-library.h@{client\_\-library.h}}
+}
+{\tt \#include $<$iostream$>$}\par
+{\tt \#include $<$fstream$>$}\par
+{\tt \#include $<$cstring$>$}\par
+{\tt \#include $<$stdlib.h$>$}\par
+{\tt \#include $<$sys/socket.h$>$}\par
+{\tt \#include $<$netinet/in.h$>$}\par
+{\tt \#include $<$arpa/inet.h$>$}\par
+{\tt \#include $<$strings.h$>$}\par
+{\tt \#include $<$pthread.h$>$}\par
+\subsection*{Strutture dati}
+\begin{CompactItemize}
+\item 
+struct \hyperlink{structblock__list}{block\_\-list}
+\begin{CompactList}\small\item\em Struttura dati del blocco di memoria: \hyperlink{structblock__list}{block\_\-list}. \item\end{CompactList}\item 
+struct \hyperlink{structserver__list}{server\_\-list}
+\begin{CompactList}\small\item\em Struttura dati della lista di server: \hyperlink{structserver__list}{server\_\-list}. \item\end{CompactList}\item 
+class \hyperlink{classLibrary}{Library}
+\begin{CompactList}\small\item\em Classe \hyperlink{classLibrary}{Library}. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Definizioni}
+\begin{CompactItemize}
+\item 
+\#define \hyperlink{client__library_8h_eefbbafa97642defe3ee6c3080b7d66f_eefbbafa97642defe3ee6c3080b7d66f}{BACKLOG}~5
+\begin{CompactList}\small\item\em Numero massimo di richieste di connessione che si possono accodare. \item\end{CompactList}\item 
+\#define \hyperlink{client__library_8h_09a3b394b8602092d58347b791158062_09a3b394b8602092d58347b791158062}{MAX\_\-LINE\_\-LEN}~1024
+\begin{CompactList}\small\item\em Lunghezza massima di ogni riga del file di configurazione. \item\end{CompactList}\item 
+\#define \hyperlink{client__library_8h_9d268e8e328e69ed44c8f1fc6707ae60_9d268e8e328e69ed44c8f1fc6707ae60}{DIMBLOCK}~128$\ast$sizeof(char)
+\begin{CompactList}\small\item\em Dimensione del blocco di memoria in bytes. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Documentazione delle definizioni}
+\hypertarget{client__library_8h_eefbbafa97642defe3ee6c3080b7d66f_eefbbafa97642defe3ee6c3080b7d66f}{
+\index{client\_\-library.h@{client\_\-library.h}!BACKLOG@{BACKLOG}}
+\index{BACKLOG@{BACKLOG}!client_library.h@{client\_\-library.h}}
+\subsubsection[{BACKLOG}]{\setlength{\rightskip}{0pt plus 5cm}\#define BACKLOG~5}}
+\label{client__library_8h_eefbbafa97642defe3ee6c3080b7d66f_eefbbafa97642defe3ee6c3080b7d66f}
+
+
+Numero massimo di richieste di connessione che si possono accodare. 
+
+\hypertarget{client__library_8h_09a3b394b8602092d58347b791158062_09a3b394b8602092d58347b791158062}{
+\index{client\_\-library.h@{client\_\-library.h}!MAX\_\-LINE\_\-LEN@{MAX\_\-LINE\_\-LEN}}
+\index{MAX\_\-LINE\_\-LEN@{MAX\_\-LINE\_\-LEN}!client_library.h@{client\_\-library.h}}
+\subsubsection[{MAX\_\-LINE\_\-LEN}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-LINE\_\-LEN~1024}}
+\label{client__library_8h_09a3b394b8602092d58347b791158062_09a3b394b8602092d58347b791158062}
+
+
+Lunghezza massima di ogni riga del file di configurazione. 
+
+\hypertarget{client__library_8h_9d268e8e328e69ed44c8f1fc6707ae60_9d268e8e328e69ed44c8f1fc6707ae60}{
+\index{client\_\-library.h@{client\_\-library.h}!DIMBLOCK@{DIMBLOCK}}
+\index{DIMBLOCK@{DIMBLOCK}!client_library.h@{client\_\-library.h}}
+\subsubsection[{DIMBLOCK}]{\setlength{\rightskip}{0pt plus 5cm}\#define DIMBLOCK~128$\ast$sizeof(char)}}
+\label{client__library_8h_9d268e8e328e69ed44c8f1fc6707ae60_9d268e8e328e69ed44c8f1fc6707ae60}
+
+
+Dimensione del blocco di memoria in bytes. 
+

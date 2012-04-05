@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>DistributedMemory: Riferimenti per il file server.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Generato da Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Pagina&nbsp;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Strutture&nbsp;dati</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>Elenco&nbsp;dei&nbsp;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&nbsp;globali</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Riferimenti per il file server.h</h1><code>#include &lt;iostream&gt;</code><br>
+<code>#include &lt;fstream&gt;</code><br>
+<code>#include &lt;cstring&gt;</code><br>
+<code>#include &lt;stdlib.h&gt;</code><br>
+<code>#include &lt;sys/socket.h&gt;</code><br>
+<code>#include &lt;netinet/in.h&gt;</code><br>
+<code>#include &lt;arpa/inet.h&gt;</code><br>
+<code>#include &lt;strings.h&gt;</code><br>
+<code>#include &lt;pthread.h&gt;</code><br>
+
+<p>
+<a href="server_8h-source.html">Vai al codice sorgente di questo file.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Strutture dati</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structclient__list.html">client_list</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Struttura dati della lista di client associati al blocco: <a class="el" href="structclient__list.html" title="Struttura dati della lista di client associati al blocco: client_list.">client_list</a>.  <a href="structclient__list.html#_details">Continua...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structblock.html">block</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Struttura dati del blocco di memoria: <a class="el" href="structblock.html" title="Struttura dati del blocco di memoria: block.">block</a>.  <a href="structblock.html#_details">Continua...</a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classServer.html">Server</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Classe <a class="el" href="classServer.html" title="Classe Server.">Server</a>.  <a href="classServer.html#_details">Continua...</a><br></td></tr>
+<tr><td colspan="2"><br><h2>Definizioni</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h_eefbbafa97642defe3ee6c3080b7d66f.html#eefbbafa97642defe3ee6c3080b7d66f">BACKLOG</a>&nbsp;&nbsp;&nbsp;5</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Numero massimo di richieste di connessione che si possono accodare.  <a href="#eefbbafa97642defe3ee6c3080b7d66f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h_09a3b394b8602092d58347b791158062.html#09a3b394b8602092d58347b791158062">MAX_LINE_LEN</a>&nbsp;&nbsp;&nbsp;1024</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Lunghezza massima di ogni riga del file di configurazione.  <a href="#09a3b394b8602092d58347b791158062"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">#define&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h_9d268e8e328e69ed44c8f1fc6707ae60.html#9d268e8e328e69ed44c8f1fc6707ae60">DIMBLOCK</a>&nbsp;&nbsp;&nbsp;128*sizeof(char)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dimensione del blocco di memoria in bytes.  <a href="#9d268e8e328e69ed44c8f1fc6707ae60"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Variabili</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h_86773fdd80f2382eba682b68ba5ab46c.html#86773fdd80f2382eba682b68ba5ab46c">SERVER_IP_ADD</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indirizzo IP del server.  <a href="#86773fdd80f2382eba682b68ba5ab46c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h_2ebf8e2ef14a1178abb087494df83399.html#2ebf8e2ef14a1178abb087494df83399">SERVER_PORT</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Porta associata all'indirizzo IP del server.  <a href="#2ebf8e2ef14a1178abb087494df83399"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h_26565396cc22008505f443cae1228ce0.html#26565396cc22008505f443cae1228ce0">config_file_path</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Path del file di configurazione.  <a href="#26565396cc22008505f443cae1228ce0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h_fba1652213778b797cb4979336b83b69.html#fba1652213778b797cb4979336b83b69">line</a> [MAX_LINE_LEN]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Stringa di appoggio per il contenuto del file di configurazione.  <a href="#fba1652213778b797cb4979336b83b69"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">pthread_mutex_t&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="server_8h_98114be66911f7843fe69913ef2f2925.html#98114be66911f7843fe69913ef2f2925">m_acc</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Semaforo di mutua esclusione.  <a href="#98114be66911f7843fe69913ef2f2925"></a><br></td></tr>
+</table>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generato il Fri Feb 4 17:36:39 2011 per DistributedMemory da&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

@@ -1,0 +1,213 @@
+\hypertarget{classServer}{
+\section{Riferimenti per la classe Server}
+\label{classServer}\index{Server@{Server}}
+}
+Classe \hyperlink{classServer}{Server}.  
+
+
+{\tt \#include $<$server.h$>$}
+
+\subsection*{Membri pubblici}
+\begin{CompactItemize}
+\item 
+\hyperlink{classServer_d5ec9462b520e59f7ea831e157ee5e59_d5ec9462b520e59f7ea831e157ee5e59}{Server} ()
+\begin{CompactList}\small\item\em \hyperlink{classServer_d5ec9462b520e59f7ea831e157ee5e59_d5ec9462b520e59f7ea831e157ee5e59}{Server()}: costruttore della classe \hyperlink{classServer}{Server}. \item\end{CompactList}\item 
+int \hyperlink{classServer_0abf0fde7783184afc435549217006b3_0abf0fde7783184afc435549217006b3}{port\_\-control} (int port)
+\begin{CompactList}\small\item\em int \hyperlink{classServer_0abf0fde7783184afc435549217006b3_0abf0fde7783184afc435549217006b3}{port\_\-control(int port)}: funzione pubblica che effettua il controllo sulla porta associata al server. \item\end{CompactList}\item 
+void \hyperlink{classServer_9e4fb38f735a2cbc9dcef29fbe8b18a6_9e4fb38f735a2cbc9dcef29fbe8b18a6}{read\_\-config\_\-file} (const char $\ast$config\_\-file)
+\begin{CompactList}\small\item\em \hyperlink{classServer_9e4fb38f735a2cbc9dcef29fbe8b18a6_9e4fb38f735a2cbc9dcef29fbe8b18a6}{read\_\-config\_\-file(const char $\ast$config\_\-file)}: funzione pubblica che legge il file di configurazione. \item\end{CompactList}\item 
+int \hyperlink{classServer_0ecc5509a88df842b30d31097a20d000_0ecc5509a88df842b30d31097a20d000}{block\_\-map} (int sk)
+\begin{CompactList}\small\item\em int \hyperlink{classServer_0ecc5509a88df842b30d31097a20d000_0ecc5509a88df842b30d31097a20d000}{block\_\-map(int sk)}: funzione pubblica che stabilisce l'associazione tra client e blocco. \item\end{CompactList}\item 
+int \hyperlink{classServer_da69667b5b906019f56db4d403412f89_da69667b5b906019f56db4d403412f89}{block\_\-unmap} (int sk)
+\begin{CompactList}\small\item\em int \hyperlink{classServer_da69667b5b906019f56db4d403412f89_da69667b5b906019f56db4d403412f89}{block\_\-unmap(int sk)}: funzione pubblica che cancella l'associazione tra client e blocco. \item\end{CompactList}\item 
+int \hyperlink{classServer_9207807bd61312d68333a6044855fe3f_9207807bd61312d68333a6044855fe3f}{block\_\-update} (int sk)
+\begin{CompactList}\small\item\em int \hyperlink{classServer_9207807bd61312d68333a6044855fe3f_9207807bd61312d68333a6044855fe3f}{block\_\-update(int sk)}: funzione pubblica che invia il contenuto del blocco al client. \item\end{CompactList}\item 
+int \hyperlink{classServer_40865edc01694851c5bf2318bd4e4d21_40865edc01694851c5bf2318bd4e4d21}{block\_\-write} (int sk)
+\begin{CompactList}\small\item\em int \hyperlink{classServer_40865edc01694851c5bf2318bd4e4d21_40865edc01694851c5bf2318bd4e4d21}{block\_\-write(int sk)}: funzione pubblica che aggiorna il contenuto della copia globale del blocco con quello della copia locale. \item\end{CompactList}\item 
+int \hyperlink{classServer_bebb2e77eafaa102863516f4b357a2f0_bebb2e77eafaa102863516f4b357a2f0}{block\_\-wait} (int sk)
+\begin{CompactList}\small\item\em int \hyperlink{classServer_bebb2e77eafaa102863516f4b357a2f0_bebb2e77eafaa102863516f4b357a2f0}{block\_\-wait(int sk)}: funzione pubblica che controlla la validità della copia locale del blocco. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Membri privati}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classServer_5080669f010965f6b2594d13c4e2f70d_5080669f010965f6b2594d13c4e2f70d}{add\_\-block} (int id\_\-block)
+\begin{CompactList}\small\item\em void \hyperlink{classServer_5080669f010965f6b2594d13c4e2f70d_5080669f010965f6b2594d13c4e2f70d}{add\_\-block(int id\_\-block)}: funzione privata che crea e inserisce un nuovo blocco in lista. \item\end{CompactList}\item 
+\hyperlink{structblock}{block} $\ast$ \hyperlink{classServer_93fae32902bc34db18eda8513e26fd97_93fae32902bc34db18eda8513e26fd97}{find\_\-block} (int id)
+\begin{CompactList}\small\item\em \hyperlink{structblock}{block} $\ast$ \hyperlink{classServer_93fae32902bc34db18eda8513e26fd97_93fae32902bc34db18eda8513e26fd97}{find\_\-block(int id)}: funzione privata che restituisce il blocco identificato da id. \item\end{CompactList}\item 
+\hyperlink{structclient__list}{client\_\-list} $\ast$ \hyperlink{classServer_186c395ce5cefdbb598489ddc70f24d2_186c395ce5cefdbb598489ddc70f24d2}{find\_\-client} (int client\_\-id, \hyperlink{structblock}{block} $\ast$bk\_\-elem)
+\begin{CompactList}\small\item\em \hyperlink{structclient__list}{client\_\-list} $\ast$ \hyperlink{classServer_186c395ce5cefdbb598489ddc70f24d2_186c395ce5cefdbb598489ddc70f24d2}{find\_\-client(int client\_\-id, block$\ast$ bk\_\-elem)}: funzione privata che restituisce il client identificato da client\_\-id. \item\end{CompactList}\item 
+void \hyperlink{classServer_4aa178ff626281eb7a1f0117df69c907_4aa178ff626281eb7a1f0117df69c907}{add\_\-client} (int client\_\-id, \hyperlink{structblock}{block} $\ast$bk\_\-elem)
+\begin{CompactList}\small\item\em void \hyperlink{classServer_4aa178ff626281eb7a1f0117df69c907_4aa178ff626281eb7a1f0117df69c907}{add\_\-client(int client\_\-id, block $\ast$bk\_\-elem)}: funzione privata che crea e inserisce un nuovo client in lista. \item\end{CompactList}\item 
+void \hyperlink{classServer_5e5b37ba00ab28b4a1d1ed83bbc16e6b_5e5b37ba00ab28b4a1d1ed83bbc16e6b}{delete\_\-client} (int client\_\-id, \hyperlink{structblock}{block} $\ast$bk\_\-elem)
+\begin{CompactList}\small\item\em void \hyperlink{classServer_5e5b37ba00ab28b4a1d1ed83bbc16e6b_5e5b37ba00ab28b4a1d1ed83bbc16e6b}{delete\_\-client(int client\_\-id, block $\ast$bk\_\-elem)}: funzione privata che elimina un client dalla lista di client. \item\end{CompactList}\item 
+void \hyperlink{classServer_e44ebbcc399725c379202cee043a468d_e44ebbcc399725c379202cee043a468d}{change\_\-valid} (int client\_\-id, \hyperlink{structblock}{block} $\ast$bk\_\-elem)
+\begin{CompactList}\small\item\em void \hyperlink{classServer_e44ebbcc399725c379202cee043a468d_e44ebbcc399725c379202cee043a468d}{change\_\-valid(int client\_\-id, block $\ast$bk\_\-elem)}: funzione privata che modifica la validità della copia locale del blocco. \item\end{CompactList}\item 
+int \hyperlink{classServer_3303875bf7d4884a73d723e232fd927d_3303875bf7d4884a73d723e232fd927d}{client\_\-unblock} (int client\_\-id, \hyperlink{structblock}{block} $\ast$bk\_\-elem)
+\begin{CompactList}\small\item\em int \hyperlink{classServer_3303875bf7d4884a73d723e232fd927d_3303875bf7d4884a73d723e232fd927d}{client\_\-unblock(int client\_\-id, block $\ast$bk\_\-elem)}: funzione privata che sblocca la wait. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Attributi privati}
+\begin{CompactItemize}
+\item 
+\hyperlink{structblock}{block} $\ast$ \hyperlink{classServer_43ed3b1c5ed34934f250f28eb58cc85c_43ed3b1c5ed34934f250f28eb58cc85c}{head}
+\begin{CompactList}\small\item\em Puntatore alla testa della lista di blocchi. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+Classe \hyperlink{classServer}{Server}. 
+
+La classe server implementa le strutture dati e i metodi richiesti dalle specifiche lato server. Utilizza, inoltre, diverse funzioni private per svolgere le operazioni necessarie ai metodi richiesti. 
+
+\subsection{Documentazione dei costruttori e dei distruttori}
+\hypertarget{classServer_d5ec9462b520e59f7ea831e157ee5e59_d5ec9462b520e59f7ea831e157ee5e59}{
+\index{Server@{Server}!Server@{Server}}
+\index{Server@{Server}!Server@{Server}}
+\subsubsection[{Server}]{\setlength{\rightskip}{0pt plus 5cm}Server::Server ()}}
+\label{classServer_d5ec9462b520e59f7ea831e157ee5e59_d5ec9462b520e59f7ea831e157ee5e59}
+
+
+\hyperlink{classServer_d5ec9462b520e59f7ea831e157ee5e59_d5ec9462b520e59f7ea831e157ee5e59}{Server()}: costruttore della classe \hyperlink{classServer}{Server}. 
+
+Il costruttore inizializza il puntatore alla testa della lista di blocchi a NULL. 
+
+\subsection{Documentazione delle funzioni membro}
+\hypertarget{classServer_5080669f010965f6b2594d13c4e2f70d_5080669f010965f6b2594d13c4e2f70d}{
+\index{Server@{Server}!add\_\-block@{add\_\-block}}
+\index{add\_\-block@{add\_\-block}!Server@{Server}}
+\subsubsection[{add\_\-block}]{\setlength{\rightskip}{0pt plus 5cm}void Server::add\_\-block (int {\em id\_\-block})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classServer_5080669f010965f6b2594d13c4e2f70d_5080669f010965f6b2594d13c4e2f70d}
+
+
+void \hyperlink{classServer_5080669f010965f6b2594d13c4e2f70d_5080669f010965f6b2594d13c4e2f70d}{add\_\-block(int id\_\-block)}: funzione privata che crea e inserisce un nuovo blocco in lista. 
+
+La funzione crea la lista di blocchi effetuando l'inserimento di un nuovo elemento in testa alla lista, inizializza i parametri della struttura dati \hyperlink{structblock}{block} e alloca lo spazio di memoria necessario. \hypertarget{classServer_93fae32902bc34db18eda8513e26fd97_93fae32902bc34db18eda8513e26fd97}{
+\index{Server@{Server}!find\_\-block@{find\_\-block}}
+\index{find\_\-block@{find\_\-block}!Server@{Server}}
+\subsubsection[{find\_\-block}]{\setlength{\rightskip}{0pt plus 5cm}{\bf block}$\ast$ Server::find\_\-block (int {\em id})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classServer_93fae32902bc34db18eda8513e26fd97_93fae32902bc34db18eda8513e26fd97}
+
+
+\hyperlink{structblock}{block} $\ast$ \hyperlink{classServer_93fae32902bc34db18eda8513e26fd97_93fae32902bc34db18eda8513e26fd97}{find\_\-block(int id)}: funzione privata che restituisce il blocco identificato da id. 
+
+La funzione scorre la lista di blocchi e restituisce il puntatore al blocco che ha id come identificativo. Restituisce NULL se il blocco identificato da id non è presente in lista. \hypertarget{classServer_186c395ce5cefdbb598489ddc70f24d2_186c395ce5cefdbb598489ddc70f24d2}{
+\index{Server@{Server}!find\_\-client@{find\_\-client}}
+\index{find\_\-client@{find\_\-client}!Server@{Server}}
+\subsubsection[{find\_\-client}]{\setlength{\rightskip}{0pt plus 5cm}{\bf client\_\-list}$\ast$ Server::find\_\-client (int {\em client\_\-id}, \/  {\bf block} $\ast$ {\em bk\_\-elem})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classServer_186c395ce5cefdbb598489ddc70f24d2_186c395ce5cefdbb598489ddc70f24d2}
+
+
+\hyperlink{structclient__list}{client\_\-list} $\ast$ \hyperlink{classServer_186c395ce5cefdbb598489ddc70f24d2_186c395ce5cefdbb598489ddc70f24d2}{find\_\-client(int client\_\-id, block$\ast$ bk\_\-elem)}: funzione privata che restituisce il client identificato da client\_\-id. 
+
+La funzione scorre la lista di client appesa al blocco puntato da bk\_\-elem e restituisce il puntatore al client che ha client\_\-id come identificativo. Restituisce NULL se il client identificato da client\_\-id non è presente in lista. \hypertarget{classServer_4aa178ff626281eb7a1f0117df69c907_4aa178ff626281eb7a1f0117df69c907}{
+\index{Server@{Server}!add\_\-client@{add\_\-client}}
+\index{add\_\-client@{add\_\-client}!Server@{Server}}
+\subsubsection[{add\_\-client}]{\setlength{\rightskip}{0pt plus 5cm}void Server::add\_\-client (int {\em client\_\-id}, \/  {\bf block} $\ast$ {\em bk\_\-elem})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classServer_4aa178ff626281eb7a1f0117df69c907_4aa178ff626281eb7a1f0117df69c907}
+
+
+void \hyperlink{classServer_4aa178ff626281eb7a1f0117df69c907_4aa178ff626281eb7a1f0117df69c907}{add\_\-client(int client\_\-id, block $\ast$bk\_\-elem)}: funzione privata che crea e inserisce un nuovo client in lista. 
+
+La funzione crea la lista di client effettuando l'inserimento di un nuovo elemento in testa alla lista e inizializza i parametri della struttura dati \hyperlink{structclient__list}{client\_\-list}. \hypertarget{classServer_5e5b37ba00ab28b4a1d1ed83bbc16e6b_5e5b37ba00ab28b4a1d1ed83bbc16e6b}{
+\index{Server@{Server}!delete\_\-client@{delete\_\-client}}
+\index{delete\_\-client@{delete\_\-client}!Server@{Server}}
+\subsubsection[{delete\_\-client}]{\setlength{\rightskip}{0pt plus 5cm}void Server::delete\_\-client (int {\em client\_\-id}, \/  {\bf block} $\ast$ {\em bk\_\-elem})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classServer_5e5b37ba00ab28b4a1d1ed83bbc16e6b_5e5b37ba00ab28b4a1d1ed83bbc16e6b}
+
+
+void \hyperlink{classServer_5e5b37ba00ab28b4a1d1ed83bbc16e6b_5e5b37ba00ab28b4a1d1ed83bbc16e6b}{delete\_\-client(int client\_\-id, block $\ast$bk\_\-elem)}: funzione privata che elimina un client dalla lista di client. 
+
+La funzione scorre la lista di client appesa al blocco puntato da bk\_\-elem, trova il client identificato da client\_\-id e lo elimina dalla lista. \hypertarget{classServer_e44ebbcc399725c379202cee043a468d_e44ebbcc399725c379202cee043a468d}{
+\index{Server@{Server}!change\_\-valid@{change\_\-valid}}
+\index{change\_\-valid@{change\_\-valid}!Server@{Server}}
+\subsubsection[{change\_\-valid}]{\setlength{\rightskip}{0pt plus 5cm}void Server::change\_\-valid (int {\em client\_\-id}, \/  {\bf block} $\ast$ {\em bk\_\-elem})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classServer_e44ebbcc399725c379202cee043a468d_e44ebbcc399725c379202cee043a468d}
+
+
+void \hyperlink{classServer_e44ebbcc399725c379202cee043a468d_e44ebbcc399725c379202cee043a468d}{change\_\-valid(int client\_\-id, block $\ast$bk\_\-elem)}: funzione privata che modifica la validità della copia locale del blocco. 
+
+La funzione scorre la lista di client appesa al blocco puntato da bk\_\-elem, trova il client identificato da client\_\-id e pone la variabile booleana valid relativa al client pari a 0 (copia locale invalida). \hypertarget{classServer_3303875bf7d4884a73d723e232fd927d_3303875bf7d4884a73d723e232fd927d}{
+\index{Server@{Server}!client\_\-unblock@{client\_\-unblock}}
+\index{client\_\-unblock@{client\_\-unblock}!Server@{Server}}
+\subsubsection[{client\_\-unblock}]{\setlength{\rightskip}{0pt plus 5cm}int Server::client\_\-unblock (int {\em client\_\-id}, \/  {\bf block} $\ast$ {\em bk\_\-elem})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classServer_3303875bf7d4884a73d723e232fd927d_3303875bf7d4884a73d723e232fd927d}
+
+
+int \hyperlink{classServer_3303875bf7d4884a73d723e232fd927d_3303875bf7d4884a73d723e232fd927d}{client\_\-unblock(int client\_\-id, block $\ast$bk\_\-elem)}: funzione privata che sblocca la wait. 
+
+La funzione scorre la lista di client appesa al blocco puntato da bk\_\-elem, trova il client identificato da client\_\-id e se questo risulta essere bloccato sulla wait (ovvero se ha la variabile booleana lock pari a 1), lo sblocca e resetta il booleano lock relativo al client a 0. \hypertarget{classServer_0abf0fde7783184afc435549217006b3_0abf0fde7783184afc435549217006b3}{
+\index{Server@{Server}!port\_\-control@{port\_\-control}}
+\index{port\_\-control@{port\_\-control}!Server@{Server}}
+\subsubsection[{port\_\-control}]{\setlength{\rightskip}{0pt plus 5cm}int Server::port\_\-control (int {\em port})}}
+\label{classServer_0abf0fde7783184afc435549217006b3_0abf0fde7783184afc435549217006b3}
+
+
+int \hyperlink{classServer_0abf0fde7783184afc435549217006b3_0abf0fde7783184afc435549217006b3}{port\_\-control(int port)}: funzione pubblica che effettua il controllo sulla porta associata al server. 
+
+La funzione effettua il controllo sulla porta associata al server per impedire l'utilizzo di porte destinate ad altri scopi. \hypertarget{classServer_9e4fb38f735a2cbc9dcef29fbe8b18a6_9e4fb38f735a2cbc9dcef29fbe8b18a6}{
+\index{Server@{Server}!read\_\-config\_\-file@{read\_\-config\_\-file}}
+\index{read\_\-config\_\-file@{read\_\-config\_\-file}!Server@{Server}}
+\subsubsection[{read\_\-config\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}void Server::read\_\-config\_\-file (const char $\ast$ {\em config\_\-file})}}
+\label{classServer_9e4fb38f735a2cbc9dcef29fbe8b18a6_9e4fb38f735a2cbc9dcef29fbe8b18a6}
+
+
+\hyperlink{classServer_9e4fb38f735a2cbc9dcef29fbe8b18a6_9e4fb38f735a2cbc9dcef29fbe8b18a6}{read\_\-config\_\-file(const char $\ast$config\_\-file)}: funzione pubblica che legge il file di configurazione. 
+
+La funzione legge il contenuto del file di configurazione, ne memorizza le righe, controlla indirizzo IP e porta, e in caso di corrispondenza richiama la add\_\-block. \hypertarget{classServer_0ecc5509a88df842b30d31097a20d000_0ecc5509a88df842b30d31097a20d000}{
+\index{Server@{Server}!block\_\-map@{block\_\-map}}
+\index{block\_\-map@{block\_\-map}!Server@{Server}}
+\subsubsection[{block\_\-map}]{\setlength{\rightskip}{0pt plus 5cm}int Server::block\_\-map (int {\em sk})}}
+\label{classServer_0ecc5509a88df842b30d31097a20d000_0ecc5509a88df842b30d31097a20d000}
+
+
+int \hyperlink{classServer_0ecc5509a88df842b30d31097a20d000_0ecc5509a88df842b30d31097a20d000}{block\_\-map(int sk)}: funzione pubblica che stabilisce l'associazione tra client e blocco. 
+
+La funzione funzione riceve l'id del blocco interessato dal client identificato da sk, trova il blocco richiamando la find\_\-block, stabilisce l'associazione blocco-client richiamando la add\_\-client, invia il contenuto del blocco al client. Tutte le operazioni sul blocco sono effettuate in mutua esclusione. La funzione ritorna 1 in caso di successo e -1 in caso di errore. \hypertarget{classServer_da69667b5b906019f56db4d403412f89_da69667b5b906019f56db4d403412f89}{
+\index{Server@{Server}!block\_\-unmap@{block\_\-unmap}}
+\index{block\_\-unmap@{block\_\-unmap}!Server@{Server}}
+\subsubsection[{block\_\-unmap}]{\setlength{\rightskip}{0pt plus 5cm}int Server::block\_\-unmap (int {\em sk})}}
+\label{classServer_da69667b5b906019f56db4d403412f89_da69667b5b906019f56db4d403412f89}
+
+
+int \hyperlink{classServer_da69667b5b906019f56db4d403412f89_da69667b5b906019f56db4d403412f89}{block\_\-unmap(int sk)}: funzione pubblica che cancella l'associazione tra client e blocco. 
+
+La funzione riceve l'id del blocco interessato dal client identificato da sk, trova il blocco richiamando la find\_\-block, elimina l'associazione client-blocco richiamando la delete\_\-client. Tutte le operazioni sul blocco sono effettuate in mutua esclusione. La funzione ritorna 1 in caso di successo e -1 in caso di errore. \hypertarget{classServer_9207807bd61312d68333a6044855fe3f_9207807bd61312d68333a6044855fe3f}{
+\index{Server@{Server}!block\_\-update@{block\_\-update}}
+\index{block\_\-update@{block\_\-update}!Server@{Server}}
+\subsubsection[{block\_\-update}]{\setlength{\rightskip}{0pt plus 5cm}int Server::block\_\-update (int {\em sk})}}
+\label{classServer_9207807bd61312d68333a6044855fe3f_9207807bd61312d68333a6044855fe3f}
+
+
+int \hyperlink{classServer_9207807bd61312d68333a6044855fe3f_9207807bd61312d68333a6044855fe3f}{block\_\-update(int sk)}: funzione pubblica che invia il contenuto del blocco al client. 
+
+La funzione riceve l'id del blocco interessato dal client identificato da sk, trova il blocco richiamando la find\_\-block, trova il client assocciato al blocco richiamando la find\_\-client, effettua un controllo sulla validità della copia locale e manda il valore del booleano valid al client. Se la copia locale risulta ancora valida termina le operazioni, altrimenti manda il contenuto del blocco al client e segnala la copia locale come valida settando il valore della variabile booleana valid a 1. Tutte le operazioni sul blocco sono effettuate in mutua esclusione. La funzione ritorna 1 in caso di successo e -1 in caso di errore. \hypertarget{classServer_40865edc01694851c5bf2318bd4e4d21_40865edc01694851c5bf2318bd4e4d21}{
+\index{Server@{Server}!block\_\-write@{block\_\-write}}
+\index{block\_\-write@{block\_\-write}!Server@{Server}}
+\subsubsection[{block\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}int Server::block\_\-write (int {\em sk})}}
+\label{classServer_40865edc01694851c5bf2318bd4e4d21_40865edc01694851c5bf2318bd4e4d21}
+
+
+int \hyperlink{classServer_40865edc01694851c5bf2318bd4e4d21_40865edc01694851c5bf2318bd4e4d21}{block\_\-write(int sk)}: funzione pubblica che aggiorna il contenuto della copia globale del blocco con quello della copia locale. 
+
+La funzione riceve l'id del blocco interessato dal client identificato da sk, trova il blocco richiamando la find\_\-block, trova il client associato al blocco richiamando la find\_\-client, effettua un controllo sulla validità della copia locale e manda il valore della variabile booleana valid al client. Se la copia locale risulta invalida termina le operazioni, altrimenti aggiorna il contenuto della copia globale del blocco con quello della copia locale inviatagli dal client, rende la copia locale invalida richiamando la change\_\-valid, invia al client il segnale di sbloccarsi sulla wait richiamando la client\_\-unblock. Tutte le operazioni sul blocco sono effettuate in mutua esclusione. La funzione ritorna 1 in caso di successo e -1 in caso di errore. \hypertarget{classServer_bebb2e77eafaa102863516f4b357a2f0_bebb2e77eafaa102863516f4b357a2f0}{
+\index{Server@{Server}!block\_\-wait@{block\_\-wait}}
+\index{block\_\-wait@{block\_\-wait}!Server@{Server}}
+\subsubsection[{block\_\-wait}]{\setlength{\rightskip}{0pt plus 5cm}int Server::block\_\-wait (int {\em sk})}}
+\label{classServer_bebb2e77eafaa102863516f4b357a2f0_bebb2e77eafaa102863516f4b357a2f0}
+
+
+int \hyperlink{classServer_bebb2e77eafaa102863516f4b357a2f0_bebb2e77eafaa102863516f4b357a2f0}{block\_\-wait(int sk)}: funzione pubblica che controlla la validità della copia locale del blocco. 
+
+La funzione riceve l'id del blocco interessato dal client identificato da sk, trova il blocco richiamando la find\_\-block, trova il client associato al blocco richiamando la find\_\-client, manda al client il valore della variabile booleana valid e se quest ultimo risulta pari a 1, setta la variabile booleana lock a 1 segnalando che il client è bloccato sulla wait. 
+
+\subsection{Documentazione dei campi}
+\hypertarget{classServer_43ed3b1c5ed34934f250f28eb58cc85c_43ed3b1c5ed34934f250f28eb58cc85c}{
+\index{Server@{Server}!head@{head}}
+\index{head@{head}!Server@{Server}}
+\subsubsection[{head}]{\setlength{\rightskip}{0pt plus 5cm}{\bf block}$\ast$ {\bf Server::head}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classServer_43ed3b1c5ed34934f250f28eb58cc85c_43ed3b1c5ed34934f250f28eb58cc85c}
+
+
+Puntatore alla testa della lista di blocchi. 
+
+
+
+La documentazione per questa classe è stata generata a partire dal seguente file:\begin{CompactItemize}
+\item 
+\hyperlink{server_8h}{server.h}\end{CompactItemize}
